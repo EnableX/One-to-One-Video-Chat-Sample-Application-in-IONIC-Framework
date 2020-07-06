@@ -1,0 +1,11 @@
+<ion-content [fullscreen]="true">
+  <div class="myClass">
+    <div id="bottom_link" #bottom_link>
+      <img class="image" src="{{audioimgSrc}}" id="button1" (click)="muteUnMuteAudio()">
+      <img class="image" src="{{videoimgSrc}}" id="button2" (click)="muteUnMuteVideo()">
+      <img class="image" src="../../assets/icon/disconnect.png" id="button3" (click)="disconnect()">
+      <img class="image" src="../../assets/icon/camera_switch.png" id="button4" (click)="switchCamera()">
+      <img class="image" src="{{speakerImgSrc}}" id="button5" (click)="cheangAudioMedia()">
+    </div>
+  </div>
+</ion-content>

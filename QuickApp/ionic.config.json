@@ -1,0 +1,8 @@
+{
+  "name": "QuickApp",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

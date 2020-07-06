@@ -1,0 +1,26 @@
+{
+    "declarations": {
+        "use_frameworks!": {
+            "declaration": "use_frameworks!",
+            "count": 1
+        }
+    },
+    "sources": {
+        "https://github.com/CocoaPods/Specs.git": {
+            "source": "https://github.com/CocoaPods/Specs.git",
+            "count": 1
+        }
+    },
+    "libraries": {
+        "Socket.IO-Client-Swift": {
+            "name": "Socket.IO-Client-Swift",
+            "spec": "~> 15.0.0",
+            "count": 1
+        },
+        "EnxRTCiOS": {
+            "name": "EnxRTCiOS",
+            "spec": "1.6.0",
+            "count": 1
+        }
+    }
+}

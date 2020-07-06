@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="enablex-cordova-plugin"
+    version="1.0.7">
+    <name>EnableX Cordova Plugin</name>
+    <description></description>
+    <license>MIT</license>
+    <keywords>enableX, vCloudx, Cordova</keywords>
+    <repo>https://github.com/EnableX/EnableX-Cordova-Plugin.git</repo>
+    <issue>https://github.com/EnableX/EnableX-Cordova-Plugin/issues</issue>
+
+      <js-module src="www/enxcordovaplugin.js" name="enxcordovaplugin">
+        <runs/>
+        <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
+        <clobbers target="EnxCordovaPlugin" />
+      </js-module>
+
+    <!-- android -->
+    <platform name="android">
+      <framework src="com.amazonaws:aws-java-sdk:1.10.75" />
+	    <framework src="build-extras.gradle" custom="true" type="gradleReference" />
+      <framework src="com.android.support:appcompat-v7:28.0.0" />
+      <framework src="com.android.support:design:28.0.0" />
+      <framework src="com.android.support:support-v4:28.0.0" />
+     
+      <config-file target="res/xml/config.xml" parent="/*">
+        <feature name="EnxCordovaPlugin">
+          <param name="android-package" value="com.enablex.EnxCordovaPlugin" />
+          <param name="onload" value="true" />
+        </feature>
+      </config-file>
+
+      <source-file src="src/android/com/enablex/EnxCordovaPlugin.java" target-dir="src/com/enablex/" />
+      <config-file target="AndroidManifest.xml" parent="/manifest">
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.RECORD_AUDIO" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />
+        <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.BLUETOOTH" />
+        <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+        <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+        <uses-feature android:name="android.hardware.camera" android:required="true" />
+        <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+      </config-file>
+    </platform>
+    <!-- iOS -->
+    <platform name="ios">
+      <podspec>
+         <config>
+             <source url="https://github.com/CocoaPods/Specs.git"/>
+         </config>
+        <pods use-frameworks="true">
+             <pod name="Socket.IO-Client-Swift" spec="~> 15.0.0" />
+             <pod name="EnxRTCiOS" spec="1.6.0"/>
+        </pods>
+      </podspec>
+      <config-file target = "config.xml" parent="/*">
+        <feature name="EnxCordovaPlugin">
+          <param name="ios-package" value="EnxCordovaPlugin" onload="true" />
+        </feature>
+      </config-file>
+      <header-file src="src/ios/EnxCordovaPlugin.h" />
+      <source-file src="src/ios/EnxCordovaPlugin.m" />
+    </platform>
+   
+</plugin>

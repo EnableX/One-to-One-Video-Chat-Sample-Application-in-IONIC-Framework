@@ -1,0 +1,23 @@
+#bottom_link{
+    position:absolute;   
+    display: inline-block;               
+    bottom:0;                           
+    left:0;                           
+    background-color: white;
+    width: 100%;
+    height: 60px;
+ }
+ .myClass {
+    background-color:lightgray; 
+    height: 100%;
+    width: 100%;
+  }
+  #button1, #button2,#button3,#button4,#button5{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+    

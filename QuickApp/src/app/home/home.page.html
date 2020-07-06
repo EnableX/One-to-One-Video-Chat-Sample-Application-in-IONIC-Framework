@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Join Page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="myClass">
+  <div class="center">
+    <div class="viewnamedev">
+      <ion-item class="roundedInput">
+        <ion-input type="Name" value="" placeholder = "Enter Name" [(ngModel)]="userName"></ion-input>
+      </ion-item>
+    </div>
+    <div class="viewroomdev">
+      <ion-item class="roundedInput">
+        <ion-input type="RoomIS" value="" placeholder = "Room Id"[(ngModel)]="roomID"></ion-input>
+      </ion-item>
+    </div>
+    <div class="btnDiv">
+      <ion-button  class="round" (click)="createRoom()">Create Room</ion-button>
+      <ion-button  class="round" (click)="joinRoom()">Join Room</ion-button>
+    </div>
+  </div>
+</div>
+</ion-content>
