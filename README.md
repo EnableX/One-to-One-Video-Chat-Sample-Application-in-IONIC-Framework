@@ -120,6 +120,7 @@ Make sure You have Cordova 3.5.0 or greater installed. If you haven't, take a lo
 
 Note: Only one user with Moderator Role allowed to connect to a Virtual Room while trying with EnableX Hosted Service. Your Own Application Server may allow upto 5 Moderators.
 
+Note:- If you used any emulator/simulator your local stream will not create. It will create only on real device.
 
 ## 2 Setup Your Own Application Server
 
