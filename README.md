@@ -136,7 +136,7 @@ Note the following:
 * Application Server is created using EnableX Server API, a Rest API Service helps in provisioning, session access and pos-session reporting.  
 
 To know more about Server API, go to:
-https://developer.enablex.io/latest/server-api/
+https://developer.enablex.io/video-api/server-api/
 
 
 ## 3 Cordova Toolkit
@@ -145,8 +145,7 @@ This Sample Applcation uses EnableX Cordova Toolkit to communicate with EnableX 
 
 ## 4 Demo
 
-EnableX provides hosted Vemo Application of different use-case for you to try out.
+EnableX provides hosted Demo Application of different use-case for you to try out.
 
 1. Try a quick Video Call: https://try.enablex.io
-2. Try Apps on Demo Zone: https://portal.enablex.io/demo-zone/
-3. Try Meeting & Webinar:  https://www.enablex.io/ucaas/
+2. Try Meeting & Webinar:  https://www.enablex.io/ucaas/
