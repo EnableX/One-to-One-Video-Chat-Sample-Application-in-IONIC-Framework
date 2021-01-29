@@ -62,7 +62,7 @@ export class ConfrencePage implements OnInit {
         playerConfiguration: playerConfiguration,
         chat_only: false,
       };
-      window.EnxCordovaPlugin.joinRoom(params["token"], streamOpt, roomOpt)
+      window.EnxRtc.joinRoom(params["token"], streamOpt, roomOpt)
       this.addEnxListner();
     });
 
@@ -80,7 +80,7 @@ export class ConfrencePage implements OnInit {
       margin_bottom: 10,
       position: "top"
     };
-    window.EnxCordovaPlugin.initLocalView(initLocalViewOptions, function (data) {
+    window.EnxRtc.initLocalView(initLocalViewOptions, function (data) {
       console.log('Local player Excelsior succuss! ' + JSON.stringify(data.data));
     }, function (err) {
       console.log('Uh oh... error' + JSON.stringify(err));
@@ -91,7 +91,7 @@ export class ConfrencePage implements OnInit {
       margin_top: 32,
       margin_bottom: 60
     };
-    window.EnxCordovaPlugin.initRemoteView(initRemoteViewOptions, function (data) {
+    window.EnxRtc.initRemoteView(initRemoteViewOptions, function (data) {
       console.log('Remore Player Excelsior succuss! ' + JSON.stringify(data.data));
     }, function (err) {
       console.log('Uh oh... error' + JSON.stringify(err));
@@ -100,19 +100,19 @@ export class ConfrencePage implements OnInit {
   //Add listoner 
   addEnxListner() {
     let _this = this;
-    window.EnxCordovaPlugin.addEventListner("onRoomConnected", function (data) {
+    window.EnxRtc.addEventListner("onRoomConnected", function (data) {
       console.log('Excelsior succuss! resizeViewOptions ' + JSON.stringify(data.data));
       _this.initLocalView();
       _this.initRemoteView();
     });
-    window.EnxCordovaPlugin.addEventListner("onRoomDisConnected", function (data) {
+    window.EnxRtc.addEventListner("onRoomDisConnected", function (data) {
       console.log('Excelsior succuss! onRoomDisConnected ' + JSON.stringify(data.data));
       _this.goBackToPriviousPage();
     });
-    window.EnxCordovaPlugin.addEventListner("onEventError", function (data) {
+    window.EnxRtc.addEventListner("onEventError", function (data) {
       console.log('Excelsior EventError! onEventError ' + JSON.stringify(data.data));
     });
-    window.EnxCordovaPlugin.addEventListner("onAudioEvent", function (data) {
+    window.EnxRtc.addEventListner("onAudioEvent", function (data) {
       console.log('Excelsior succuss! onAudioEvent ' + JSON.stringify(data.data.result));
       var response = data.data;
       console.log("audio msg" + typeof response.msg);
@@ -128,7 +128,7 @@ export class ConfrencePage implements OnInit {
         _this.audioimgSrc = "../../assets/icon/mute_audio.png";
       }
     });
-    window.EnxCordovaPlugin.addEventListner("onVideoEvent", function (data) {
+    window.EnxRtc.addEventListner("onVideoEvent", function (data) {
       console.log('Excelsior succuss! onVideoEvent ' + JSON.stringify(data.data));
       var response = data.data;
       console.log("Video msg" + response.msg);
@@ -142,10 +142,10 @@ export class ConfrencePage implements OnInit {
       }
 
     });
-    window.EnxCordovaPlugin.addEventListner("onEventError", function (data) {
+    window.EnxRtc.addEventListner("onEventError", function (data) {
       console.log('Excelsior EventError! onEventError ' + JSON.stringify(data.data));
     });
-    window.EnxCordovaPlugin.addEventListner("onNotifyDeviceUpdate", function (data) {
+    window.EnxRtc.addEventListner("onNotifyDeviceUpdate", function (data) {
       console.log('Excelsior EventError! onNotifyDeviceUpdate ' + JSON.stringify(data.data));
       var deviceName = data.data;
       if (deviceName === "EARPIECE") {
@@ -163,41 +163,41 @@ export class ConfrencePage implements OnInit {
     console.log("Image Click");
     if (!this.audioMute) {
       console.log("Audio Mute");
-      window.EnxCordovaPlugin.muteSelfAudio(true);
+      window.EnxRtc.muteSelfAudio(true);
     }
     else {
       console.log("Audio unMute");
-      window.EnxCordovaPlugin.muteSelfAudio(false);
+      window.EnxRtc.muteSelfAudio(false);
     }
   }
   muteUnMuteVideo() {
     console.log("Image Click");
     if (!this.videoMute) {
-      window.EnxCordovaPlugin.muteSelfVideo(true);
+      window.EnxRtc.muteSelfVideo(true);
     }
     else {
-      window.EnxCordovaPlugin.muteSelfVideo(false);
+      window.EnxRtc.muteSelfVideo(false);
     }
   }
   disconnect() {
-    window.EnxCordovaPlugin.disconnect(false, function (data) {
+    window.EnxRtc.disconnect(false, function (data) {
       console.log('Excelsior succuss! hideSelfView ' + JSON.stringify(data.data));
     }, function (err) {
       console.log('Uh oh... error hideSelfView ' + JSON.stringify(err));
     });
   }
   switchCamera() {
-    window.EnxCordovaPlugin.switchCamera(false, function (data) {
+    window.EnxRtc.switchCamera(false, function (data) {
       console.log('Excelsior succuss! Switch Camera ' + JSON.stringify(data.data));
     }, function (err) {
       console.log('Uh oh... error hideSelfView ' + JSON.stringify(err));
     });
   }
   cheangAudioMedia() {
-    window.EnxCordovaPlugin.getSelectedDevice(function (data) {
+    window.EnxRtc.getSelectedDevice(function (data) {
       console.log('Excelsior succuss! getSelectedDevice ' + JSON.stringify(data.data));
       var currentDevice = data.data;
-      window.EnxCordovaPlugin.getDevices(function (data) {
+      window.EnxRtc.getDevices(function (data) {
         console.log('Excelsior succuss! getDevices ' + JSON.stringify(data.data));
         var connectedMedia = data.data;
         console.log("fileter media " + connectedMedia);
@@ -207,7 +207,7 @@ export class ConfrencePage implements OnInit {
             console.log("Available Media" + meida);
           }
           else {
-            window.EnxCordovaPlugin.switchMediaDevice(meida, function (data) {
+            window.EnxRtc.switchMediaDevice(meida, function (data) {
               console.log('Excelsior succuss! switchMediaDevice ' + JSON.stringify(data.data));
             }, function (err) {
               console.log('Uh oh... error resizeLocalView ' + JSON.stringify(err));
