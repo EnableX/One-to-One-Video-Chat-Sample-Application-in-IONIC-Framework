@@ -14,7 +14,7 @@ var kTry      = true;
 
 /*Use enablec portal to create your app and get these following credentials*/
     var kAppId    = "App_ID";
-    var kAppkey   = "App_Key";
+    var kAppkey   = "App_key";
 
  @Component({
         selector: 'app-home',

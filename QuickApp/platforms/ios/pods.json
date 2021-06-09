@@ -19,7 +19,7 @@
         },
         "EnxRTCiOS": {
             "name": "EnxRTCiOS",
-            "spec": "1.6.0",
+            "spec": "1.9.3",
             "count": 1
         }
     }

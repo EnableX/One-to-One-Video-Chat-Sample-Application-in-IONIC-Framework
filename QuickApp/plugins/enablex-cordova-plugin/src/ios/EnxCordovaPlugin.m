@@ -332,7 +332,16 @@
 -(void)onFinishedFloorRequest:(CDVInvokedUrlCommand*)command{
    [eventListional setObject:command.callbackId forKey:@"onFinishedFloorRequest"];
 }
-
+#pragma -mark pin/unpin Callback
+-(void)onAckPinUsers:(CDVInvokedUrlCommand*)command{
+    [eventListional setObject:command.callbackId forKey:@"onAckPinUsers"];
+}
+-(void)onAckUnpinUsers:(CDVInvokedUrlCommand*)command{
+    [eventListional setObject:command.callbackId forKey:@"onAckUnpinUsers"];
+}
+-(void)onPinnedUsers:(CDVInvokedUrlCommand*)command{
+    [eventListional setObject:command.callbackId forKey:@"onPinnedUsers"];
+}
 //Check For obj Refrence
 -(void)checkForObjectRef{
     if(mEnxRtc == nil){
@@ -346,11 +355,13 @@
 ///Join Room Events
     -(void)joinRoom:(CDVInvokedUrlCommand*)command{
         [self checkForObjectRef];
+        [eventListional setObject:command.callbackId forKey:@"joinRoom"];
         NSDictionary* phrase = [command.arguments objectAtIndex:0];
         NSMutableDictionary *roomDict = [phrase[@"roomInfo"] mutableCopy];
-        [roomDict setObject:@"list" forKey:@"activeviews"];
+        [roomDict setObject:@"view" forKey:@"activeviews"];
          mLocalStream = [mEnxRtc joinRoom:phrase[@"token"] delegate:self PublishStreamInfo:phrase[@"publishStreamInfo"] roomInfo:roomDict advanceOptions:nil];
         mLocalStream.delegate = self;
+        [self triggerSuccussJSEvent:@"joinRoom" actionName:@"joinRoom" requestData:@"Joined Room called Success"];
     }
 
 //Create LocalView
@@ -1310,8 +1321,8 @@
         if(argu != nil){
             if(mEnxRoom != nil){
                 NSString *number =argu[@"text"];
-                [mEnxRoom makeOutboundCall:number];
-                //[self triggerSuccussJSEvent:@"configuartionOptions" actionName:@"configuartionOptions" requestData:@"Success"];
+                 NSString *callerId = argu[@"callerId"];
+                [mEnxRoom makeOutboundCall:number callerId:callerId];
             }else{
                [self reportErrorToJS:@"Object is not initialize : EnxRoom"];
             }
@@ -1639,7 +1650,24 @@
           NSLog(@"%@", [NSString stringWithFormat:@"%@",exception.description]);
       }
 }
--(void)createOptionStream:(NSDictionary *)dict{
+-(void)createOptionStream:(EnxStream *)stream{
+    if(stream != nil){
+        mOptionStream = stream;
+        if(mOptionStream.enxPlayerView != nil){
+            mOptionPlayer = (EnxPlayerView*)mOptionStream.enxPlayerView; 
+            mOptionPlayer.delegate = self;
+        }
+    }
+    // NSDictionary *remoteStreamDict = mEnxRoom.streamsByStreamId;
+    // NSString *streamId = [NSString stringWithFormat:@"%@",dict[@"streamId"]];
+    // mOptionStream =  [remoteStreamDict objectForKey:streamId];
+    // if(mOptionPlayer == nil){
+    //     mOptionPlayer = [[EnxPlayerView alloc]initRemoteView:CGRectZero];
+    //     mOptionPlayer.delegate = self;
+    // }
+    // [mOptionStream attachRenderer:mOptionPlayer];
+}
+-(void)createOptionStreamForAnnotation:(NSDictionary *)dict{
     NSDictionary *remoteStreamDict = mEnxRoom.streamsByStreamId;
     NSString *streamId = [NSString stringWithFormat:@"%@",dict[@"streamId"]];
     mOptionStream =  [remoteStreamDict objectForKey:streamId];
@@ -1856,7 +1884,46 @@
     }
 }
 
+#pragma - make Pin/Unpin user
+/*This method for Modaitore, Where he/she can releaseFloor any particepnt floor request*/
+-(void)pinUsers:(CDVInvokedUrlCommand*)command{
+    [eventListional setObject:command.callbackId forKey:@"pinUsers"];
+    NSDictionary* argu = [command.arguments objectAtIndex:0];
+    @try {
+        if(argu != nil){
+            if(mEnxRoom != nil){
+                NSArray *clientIds = argu[@"clientIds"];
+                [mEnxRoom pinUsers:clientIds];
+            }else{
+               [self reportErrorToJS:@"Object is not initialize : EnxRoom"];
+            }
+        }else{
+           [self reportErrorToJS:[NSString stringWithFormat:@"Wrong JSON  : %@",argu]];
+        }
+    }@catch (NSException *exception) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@",exception.description]);
+    }
 
+}
+/*This method for Modaitore, Where he/she can releaseFloor any particepnt floor request*/
+-(void)unpinUsers:(CDVInvokedUrlCommand*)command{
+    [eventListional setObject:command.callbackId forKey:@"unpinUsers"];
+    NSDictionary* argu = [command.arguments objectAtIndex:0];
+    @try {
+        if(argu != nil){
+            if(mEnxRoom != nil){
+                NSArray *clientIds = argu[@"clientIds"];
+                [mEnxRoom unpinUsers:clientIds];
+            }else{
+               [self reportErrorToJS:@"Object is not initialize : EnxRoom"];
+            }
+        }else{
+           [self reportErrorToJS:[NSString stringWithFormat:@"Wrong JSON  : %@",argu]];
+        }
+    }@catch (NSException *exception) {
+        NSLog(@"%@", [NSString stringWithFormat:@"%@",exception.description]);
+    }
+}
 
 #pragma -mark Delegates Methods
 /*
@@ -2191,32 +2258,26 @@ didFileDownloadCancelled:(NSArray *_Nullable)data{
 didFileUploadCancelled:(NSArray *_Nullable)data{
    [self triggerSuccussJSEvent:@"onFileUploadCancelled" actionName:@"onFileUploadCancelled" requestData:data[0]];
 }
--(void)room:(EnxRoom *_Nullable)room screenSharedStarted:(NSArray *_Nullable)Data{
-    [self triggerSuccussJSEvent:@"onScreenSharedStarted" actionName:@"onScreenSharedStarted" requestData:Data[0]];
-    if(Data.count == 0){
-        return;
-    }
-    [self createOptionStream:Data[0]];
+-(void)room:(EnxRoom *_Nullable)room didScreenShareStarted:(EnxStream *_Nullable)stream{
+    [self triggerSuccussJSEvent:@"onScreenSharedStarted" actionName:@"onScreenSharedStarted" requestData:@{@"eventType" : @"onScreenSharedStarted" , @"data" : @"Screen shared started"}];
+    [self createOptionStream:stream];
 }
--(void)room:(EnxRoom *_Nullable)room screenShareStopped:(NSArray *_Nullable)Data{
-    [self triggerSuccussJSEvent:@"onScreenSharedStopped" actionName:@"onScreenSharedStopped" requestData:Data[0]];
+-(void)room:(EnxRoom *_Nullable)room didScreenShareStopped:(EnxStream *_Nullable)stream{
+    [self triggerSuccussJSEvent:@"onScreenSharedStopped" actionName:@"onScreenSharedStopped" requestData:@{@"eventType" : @"onScreenSharedStopped" , @"data" : @"Screen shared stopped"}];
 }
--(void)room:(EnxRoom *_Nullable)room canvasStarted:(NSArray *_Nullable)Data{
-    [self triggerSuccussJSEvent:@"onCanvasStarted" actionName:@"onCanvasStarted" requestData:Data[0]];
-    if(Data.count == 0){
-        return;
-    }
-    [self createOptionStream:Data[0]];
+-(void)room:(EnxRoom *_Nullable)room didCanvasStarted:(EnxStream *_Nullable)stream{
+    [self triggerSuccussJSEvent:@"onCanvasStarted" actionName:@"onCanvasStarted" requestData:@{@"eventType" : @"onCanvasStarted" , @"data" : @"Canvas started"}];
+    [self createOptionStream:stream];
 }
--(void)room:(EnxRoom *_Nullable)room canvasStopped:(NSArray *_Nullable)Data{
-    [self triggerSuccussJSEvent:@"onCanvasStopped" actionName:@"onCanvasStopped" requestData:Data[0]];
+-(void)room:(EnxRoom *_Nullable)room didCanvasStopped:(EnxStream *_Nullable)stream{
+    [self triggerSuccussJSEvent:@"onCanvasStopped" actionName:@"onCanvasStopped" requestData:@{@"eventType" : @"onCanvasStopped" , @"data" : @"Canvas stopprd"}];
 }
 -(void)room:(EnxRoom *_Nullable)room didAnnotationStarted:(NSArray *_Nullable)Data{
     [self triggerSuccussJSEvent:@"onAnnotationStarted" actionName:@"onAnnotationStarted" requestData:Data[0]];
     if(Data.count == 0){
         return;
     }
-    [self createOptionStream:Data[0]];
+    [self createOptionStreamForAnnotation:Data[0]];
 }
 -(void)room:(EnxRoom *_Nullable)room didAnnotationStopped:(NSArray *_Nullable)Data{
     [self triggerSuccussJSEvent:@"onAnnotationStopped" actionName:@"onAnnotationStopped" requestData:Data[0]];
@@ -2287,7 +2348,17 @@ didFileUploadCancelled:(NSArray *_Nullable)data{
 - (void)didProcessFloorRequested:(NSArray *_Nullable)Data{
     [self triggerSuccussJSEvent:@"onProcessFloorRequested" actionName:@"onProcessFloorRequested" requestData:Data[0]];
 }
+#pragma -mark pin/unpin callback
 
+- (void)room:(EnxRoom *_Nullable)channel didACKAddPingUser:(NSArray *_Nullable)data{
+    [self triggerSuccussJSEvent:@"onAckPinUsers" actionName:@"onAckPinUsers" requestData:data[0]];
+}
+- (void)room:(EnxRoom *_Nullable)channel didACKRemovePingUser:(NSArray * _Nullable)data{
+    [self triggerSuccussJSEvent:@"onAckUnpinUsers" actionName:@"onAckUnpinUsers" requestData:data[0]];
+}
+- (void)room:(EnxRoom *_Nullable)channel didPingedUsers:(NSArray *_Nullable)data{
+    [self triggerSuccussJSEvent:@"onPinnedUsers" actionName:@"onPinnedUsers" requestData:data[0]];
+}
 #pragma -mark Common Methods
 /*Common method for All events*/
 -(void)triggerSuccussJSEvent:(NSString*)actionType actionName:(NSString*)name requestData:(id)metaData{

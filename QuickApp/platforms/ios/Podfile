@@ -5,5 +5,5 @@ use_frameworks!
 target 'MyApp' do
 	project 'MyApp.xcodeproj'
 	pod 'Socket.IO-Client-Swift', '~> 15.0.0'
-	pod 'EnxRTCiOS', '1.6.0'
+	pod 'EnxRTCiOS', '1.9.3'
 end

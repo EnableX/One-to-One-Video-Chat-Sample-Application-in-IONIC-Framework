@@ -1,6 +1,7 @@
 buildscript {
     repositories {
         jcenter()
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.0.0'
@@ -10,13 +11,19 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-        maven {
-            url  "https://dl.bintray.com/enablex/maven"
-        }
+        flatDir {
+      dirs 'libs'
+   }
     }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.enxrtc:Enx-Rtc-Android:1.6.0'
+    implementation (name: 'Enx-Rtc-Android-release_1.9.5', ext: 'aar')
 } 
+android {
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+}

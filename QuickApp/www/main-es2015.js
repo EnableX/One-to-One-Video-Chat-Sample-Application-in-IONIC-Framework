@@ -661,7 +661,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/jaykumar/Desktop/Code/Codova/ionice/QuickApp/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/pankajpandey/Desktop/Cordova/One-to-One-Video-Chat-Sample-Application-in-IONIC-Framework/QuickApp/src/main.ts */"./src/main.ts");
 
 
 /***/ })

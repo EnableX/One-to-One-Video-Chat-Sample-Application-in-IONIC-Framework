@@ -180,7 +180,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "#bottom_link {\n  position: absolute;\n  display: inline-block;\n  bottom: 0;\n  left: 0;\n  background-color: white;\n  width: 100%;\n  height: 60px;\n}\n\n.myClass {\n  background-color: lightgray;\n  height: 100%;\n  width: 100%;\n}\n\n#button1, #button2, #button3, #button4, #button5 {\n  width: 40px;\n  height: 40px;\n  margin-top: 10px;\n  margin-bottom: 10px;\n  margin-left: 4%;\n  margin-right: 4%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9qYXlrdW1hci9EZXNrdG9wL0NvZGUvQ29kb3ZhL2lvbmljZS9RdWlja0FwcC9zcmMvYXBwL2NvbmZyZW5jZS9jb25mcmVuY2UucGFnZS5zY3NzIiwic3JjL2FwcC9jb25mcmVuY2UvY29uZnJlbmNlLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGtCQUFBO0VBQ0EscUJBQUE7RUFDQSxTQUFBO0VBQ0EsT0FBQTtFQUNBLHVCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7QUNDSjs7QURDQztFQUNHLDJCQUFBO0VBQ0EsWUFBQTtFQUNBLFdBQUE7QUNFSjs7QURBRTtFQUNFLFdBQUE7RUFDQSxZQUFBO0VBQ0EsZ0JBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtBQ0dKIiwiZmlsZSI6InNyYy9hcHAvY29uZnJlbmNlL2NvbmZyZW5jZS5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIjYm90dG9tX2xpbmt7XG4gICAgcG9zaXRpb246YWJzb2x1dGU7ICAgXG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrOyAgICAgICAgICAgICAgIFxuICAgIGJvdHRvbTowOyAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgIGxlZnQ6MDsgICAgICAgICAgICAgICAgICAgICAgICAgICBcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDYwcHg7XG4gfVxuIC5teUNsYXNzIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOmxpZ2h0Z3JheTsgXG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIHdpZHRoOiAxMDAlO1xuICB9XG4gICNidXR0b24xLCAjYnV0dG9uMiwjYnV0dG9uMywjYnV0dG9uNCwjYnV0dG9uNXtcbiAgICB3aWR0aDogNDBweDtcbiAgICBoZWlnaHQ6IDQwcHg7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xuICAgIG1hcmdpbi1sZWZ0OiA0JTtcbiAgICBtYXJnaW4tcmlnaHQ6IDQlO1xufVxuICAgICIsIiNib3R0b21fbGluayB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiA2MHB4O1xufVxuXG4ubXlDbGFzcyB7XG4gIGJhY2tncm91bmQtY29sb3I6IGxpZ2h0Z3JheTtcbiAgaGVpZ2h0OiAxMDAlO1xuICB3aWR0aDogMTAwJTtcbn1cblxuI2J1dHRvbjEsICNidXR0b24yLCAjYnV0dG9uMywgI2J1dHRvbjQsICNidXR0b241IHtcbiAgd2lkdGg6IDQwcHg7XG4gIGhlaWdodDogNDBweDtcbiAgbWFyZ2luLXRvcDogMTBweDtcbiAgbWFyZ2luLWJvdHRvbTogMTBweDtcbiAgbWFyZ2luLWxlZnQ6IDQlO1xuICBtYXJnaW4tcmlnaHQ6IDQlO1xufSJdfQ== */";
+    __webpack_exports__["default"] = "#bottom_link {\n  position: absolute;\n  display: inline-block;\n  bottom: 0;\n  left: 0;\n  background-color: white;\n  width: 100%;\n  height: 60px;\n}\n\n.myClass {\n  background-color: lightgray;\n  height: 100%;\n  width: 100%;\n}\n\n#button1, #button2, #button3, #button4, #button5 {\n  width: 40px;\n  height: 40px;\n  margin-top: 10px;\n  margin-bottom: 10px;\n  margin-left: 4%;\n  margin-right: 4%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9wYW5rYWpwYW5kZXkvRGVza3RvcC9Db3Jkb3ZhL09uZS10by1PbmUtVmlkZW8tQ2hhdC1TYW1wbGUtQXBwbGljYXRpb24taW4tSU9OSUMtRnJhbWV3b3JrL1F1aWNrQXBwL3NyYy9hcHAvY29uZnJlbmNlL2NvbmZyZW5jZS5wYWdlLnNjc3MiLCJzcmMvYXBwL2NvbmZyZW5jZS9jb25mcmVuY2UucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQUE7RUFDQSxxQkFBQTtFQUNBLFNBQUE7RUFDQSxPQUFBO0VBQ0EsdUJBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtBQ0NKOztBRENDO0VBQ0csMkJBQUE7RUFDQSxZQUFBO0VBQ0EsV0FBQTtBQ0VKOztBREFFO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSxnQkFBQTtFQUNBLG1CQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0FDR0oiLCJmaWxlIjoic3JjL2FwcC9jb25mcmVuY2UvY29uZnJlbmNlLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIiNib3R0b21fbGlua3tcbiAgICBwb3NpdGlvbjphYnNvbHV0ZTsgICBcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7ICAgICAgICAgICAgICAgXG4gICAgYm90dG9tOjA7ICAgICAgICAgICAgICAgICAgICAgICAgICAgXG4gICAgbGVmdDowOyAgICAgICAgICAgICAgICAgICAgICAgICAgIFxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogNjBweDtcbiB9XG4gLm15Q2xhc3Mge1xuICAgIGJhY2tncm91bmQtY29sb3I6bGlnaHRncmF5OyBcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgd2lkdGg6IDEwMCU7XG4gIH1cbiAgI2J1dHRvbjEsICNidXR0b24yLCNidXR0b24zLCNidXR0b240LCNidXR0b241e1xuICAgIHdpZHRoOiA0MHB4O1xuICAgIGhlaWdodDogNDBweDtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG4gICAgbWFyZ2luLWxlZnQ6IDQlO1xuICAgIG1hcmdpbi1yaWdodDogNCU7XG59XG4gICAgIiwiI2JvdHRvbV9saW5rIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIGJvdHRvbTogMDtcbiAgbGVmdDogMDtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDYwcHg7XG59XG5cbi5teUNsYXNzIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogbGlnaHRncmF5O1xuICBoZWlnaHQ6IDEwMCU7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4jYnV0dG9uMSwgI2J1dHRvbjIsICNidXR0b24zLCAjYnV0dG9uNCwgI2J1dHRvbjUge1xuICB3aWR0aDogNDBweDtcbiAgaGVpZ2h0OiA0MHB4O1xuICBtYXJnaW4tdG9wOiAxMHB4O1xuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xuICBtYXJnaW4tbGVmdDogNCU7XG4gIG1hcmdpbi1yaWdodDogNCU7XG59Il19 */";
     /***/
   },
 
@@ -238,7 +238,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.videoimgSrc = "../../assets/icon/unmute_video.png";
         this.speakerImgSrc = "../../assets/icon/mute_speaker.png";
         this.audioMute = false;
-        this.videoMuted = false;
+        this.videoMute = false;
       }
 
       _createClass(ConfrencePage, [{
@@ -293,7 +293,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               playerConfiguration: playerConfiguration,
               chat_only: false
             };
-            window.EnxCordovaPlugin.joinRoom(params["token"], streamOpt, roomOpt);
+            window.EnxRtc.joinRoom(params["token"], streamOpt, roomOpt);
 
             _this2.addEnxListner();
           });
@@ -312,7 +312,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             margin_bottom: 10,
             position: "top"
           };
-          window.EnxCordovaPlugin.initLocalView(initLocalViewOptions, function (data) {
+          window.EnxRtc.initLocalView(initLocalViewOptions, function (data) {
             console.log('Local player Excelsior succuss! ' + JSON.stringify(data.data));
           }, function (err) {
             console.log('Uh oh... error' + JSON.stringify(err));
@@ -325,7 +325,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             margin_top: 32,
             margin_bottom: 60
           };
-          window.EnxCordovaPlugin.initRemoteView(initRemoteViewOptions, function (data) {
+          window.EnxRtc.initRemoteView(initRemoteViewOptions, function (data) {
             console.log('Remore Player Excelsior succuss! ' + JSON.stringify(data.data));
           }, function (err) {
             console.log('Uh oh... error' + JSON.stringify(err));
@@ -337,22 +337,22 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function addEnxListner() {
           var _this = this;
 
-          window.EnxCordovaPlugin.addEventListner("onRoomConnected", function (data) {
+          window.EnxRtc.addEventListner("onRoomConnected", function (data) {
             console.log('Excelsior succuss! resizeViewOptions ' + JSON.stringify(data.data));
 
             _this.initLocalView();
 
             _this.initRemoteView();
           });
-          window.EnxCordovaPlugin.addEventListner("onRoomDisConnected", function (data) {
+          window.EnxRtc.addEventListner("onRoomDisConnected", function (data) {
             console.log('Excelsior succuss! onRoomDisConnected ' + JSON.stringify(data.data));
 
             _this.goBackToPriviousPage();
           });
-          window.EnxCordovaPlugin.addEventListner("onEventError", function (data) {
+          window.EnxRtc.addEventListner("onEventError", function (data) {
             console.log('Excelsior EventError! onEventError ' + JSON.stringify(data.data));
           });
-          window.EnxCordovaPlugin.addEventListner("onAudioEvent", function (data) {
+          window.EnxRtc.addEventListner("onAudioEvent", function (data) {
             console.log('Excelsior succuss! onAudioEvent ' + JSON.stringify(data.data.result));
             var response = data.data;
             console.log("audio msg" + typeof response.msg);
@@ -368,23 +368,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               _this.audioimgSrc = "../../assets/icon/mute_audio.png";
             }
           });
-          window.EnxCordovaPlugin.addEventListner("onVideoEvent", function (data) {
+          window.EnxRtc.addEventListner("onVideoEvent", function (data) {
             console.log('Excelsior succuss! onVideoEvent ' + JSON.stringify(data.data));
             var response = data.data;
             console.log("Video msg" + response.msg);
 
             if (response.msg === "Video Off") {
-              _this.videoMuted = true;
+              _this.videoMute = true;
               _this.videoimgSrc = "../../assets/icon/unmute_video.png";
             } else {
-              _this.videoMuted = false;
+              _this.videoMute = false;
               _this.videoimgSrc = "../../assets/icon/mute_video.png";
             }
           });
-          window.EnxCordovaPlugin.addEventListner("onEventError", function (data) {
+          window.EnxRtc.addEventListner("onEventError", function (data) {
             console.log('Excelsior EventError! onEventError ' + JSON.stringify(data.data));
           });
-          window.EnxCordovaPlugin.addEventListner("onNotifyDeviceUpdate", function (data) {
+          window.EnxRtc.addEventListner("onNotifyDeviceUpdate", function (data) {
             console.log('Excelsior EventError! onNotifyDeviceUpdate ' + JSON.stringify(data.data));
             var deviceName = data.data;
 
@@ -407,10 +407,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           if (!this.audioMute) {
             console.log("Audio Mute");
-            window.EnxCordovaPlugin.muteSelfAudio(true);
+            window.EnxRtc.muteSelfAudio(true);
           } else {
             console.log("Audio unMute");
-            window.EnxCordovaPlugin.muteSelfAudio(false);
+            window.EnxRtc.muteSelfAudio(false);
           }
         }
       }, {
@@ -418,16 +418,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function muteUnMuteVideo() {
           console.log("Image Click");
 
-          if (!this.videoMuted) {
-            window.EnxCordovaPlugin.muteSelfVideo(true);
+          if (!this.videoMute) {
+            window.EnxRtc.muteSelfVideo(true);
           } else {
-            window.EnxCordovaPlugin.muteSelfVideo(false);
+            window.EnxRtc.muteSelfVideo(false);
           }
         }
       }, {
         key: "disconnect",
         value: function disconnect() {
-          window.EnxCordovaPlugin.disconnect(false, function (data) {
+          window.EnxRtc.disconnect(false, function (data) {
             console.log('Excelsior succuss! hideSelfView ' + JSON.stringify(data.data));
           }, function (err) {
             console.log('Uh oh... error hideSelfView ' + JSON.stringify(err));
@@ -436,7 +436,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "switchCamera",
         value: function switchCamera() {
-          window.EnxCordovaPlugin.switchCamera(false, function (data) {
+          window.EnxRtc.switchCamera(false, function (data) {
             console.log('Excelsior succuss! Switch Camera ' + JSON.stringify(data.data));
           }, function (err) {
             console.log('Uh oh... error hideSelfView ' + JSON.stringify(err));
@@ -445,10 +445,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "cheangAudioMedia",
         value: function cheangAudioMedia() {
-          window.EnxCordovaPlugin.getSelectedDevice(function (data) {
+          window.EnxRtc.getSelectedDevice(function (data) {
             console.log('Excelsior succuss! getSelectedDevice ' + JSON.stringify(data.data));
             var currentDevice = data.data;
-            window.EnxCordovaPlugin.getDevices(function (data) {
+            window.EnxRtc.getDevices(function (data) {
               console.log('Excelsior succuss! getDevices ' + JSON.stringify(data.data));
               var connectedMedia = data.data;
               console.log("fileter media " + connectedMedia);
@@ -464,7 +464,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                   if (meida === currentDevice) {
                     console.log("Available Media" + meida);
                   } else {
-                    window.EnxCordovaPlugin.switchMediaDevice(meida, function (data) {
+                    window.EnxRtc.switchMediaDevice(meida, function (data) {
                       console.log('Excelsior succuss! switchMediaDevice ' + JSON.stringify(data.data));
                     }, function (err) {
                       console.log('Uh oh... error resizeLocalView ' + JSON.stringify(err));

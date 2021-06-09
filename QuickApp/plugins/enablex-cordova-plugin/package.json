@@ -1,29 +1,6 @@
 {
-  "_from": "enablex-cordova-plugin@latest",
-  "_id": "enablex-cordova-plugin@1.0.7",
-  "_inBundle": false,
-  "_integrity": "sha512-p7yFsmYlAD9DIwdq51csd0kSDS2gT2s87xIXQaSeWDkESnm1FBdAKsOUGb6c8CW2LzcKm4T72h82wbCT0SaWDA==",
-  "_location": "/enablex-cordova-plugin",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "enablex-cordova-plugin@latest",
-    "name": "enablex-cordova-plugin",
-    "escapedName": "enablex-cordova-plugin",
-    "rawSpec": "latest",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/enablex-cordova-plugin/-/enablex-cordova-plugin-1.0.7.tgz",
-  "_shasum": "3370ccc2b77a42f2d6c52925dc24dc17a151f913",
-  "_spec": "enablex-cordova-plugin@latest",
-  "_where": "/Users/jaykumar/Desktop/Code/Codova/ionice/QuickApp",
-  "bundleDependencies": false,
+  "name": "enablex-cordova-plugin",
+  "version": "1.9.2",
   "cordova": {
     "id": "enablex-cordova-plugin",
     "platforms": [
@@ -31,8 +8,19 @@
       "ios"
     ]
   },
-  "deprecated": false,
   "description": "Add live video streaming to your Cordova Application",
-  "name": "enablex-cordova-plugin",
-  "version": "1.0.7"
+  "repository": {
+    "type": "git",
+    "url": "http://jayprakash.k@bitbucket.vcloudx.com/bitbucket/scm/cordova/cordova-plugin.git"
+  },
+  "keywords": [
+    "enableX",
+    "vCloudx",
+    "Cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "enablexer",
+  "license": "MIT"
 }

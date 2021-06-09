@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="enablex-cordova-plugin"
-    version="1.0.7">
+    version="1.9.2">
     <name>EnableX Cordova Plugin</name>
     <description></description>
     <license>MIT</license>
@@ -13,7 +13,7 @@
       <js-module src="www/enxcordovaplugin.js" name="enxcordovaplugin">
         <runs/>
         <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
-        <clobbers target="EnxCordovaPlugin" />
+        <clobbers target="EnxRtc" />
       </js-module>
 
     <!-- android -->
@@ -25,7 +25,7 @@
       <framework src="com.android.support:support-v4:28.0.0" />
      
       <config-file target="res/xml/config.xml" parent="/*">
-        <feature name="EnxCordovaPlugin">
+        <feature name="EnxRtc">
           <param name="android-package" value="com.enablex.EnxCordovaPlugin" />
           <param name="onload" value="true" />
         </feature>
@@ -47,6 +47,7 @@
         <uses-feature android:name="android.hardware.camera" android:required="true" />
         <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
       </config-file>
+      <lib-file src="libs/Enx-Rtc-Android-release_1.9.5.aar"/>
     </platform>
     <!-- iOS -->
     <platform name="ios">
@@ -56,11 +57,11 @@
          </config>
         <pods use-frameworks="true">
              <pod name="Socket.IO-Client-Swift" spec="~> 15.0.0" />
-             <pod name="EnxRTCiOS" spec="1.6.0"/>
+             <pod name="EnxRTCiOS" spec="1.9.3"/>
         </pods>
       </podspec>
       <config-file target = "config.xml" parent="/*">
-        <feature name="EnxCordovaPlugin">
+        <feature name="EnxRtc">
           <param name="ios-package" value="EnxCordovaPlugin" onload="true" />
         </feature>
       </config-file>

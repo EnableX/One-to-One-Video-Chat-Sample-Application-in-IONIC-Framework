@@ -113,8 +113,6 @@ Create Remore Player View
 -(void)enableStats:(CDVInvokedUrlCommand*)command;
 /*Handover self authority to other user in same room*/
 -(void)switchUserRole:(CDVInvokedUrlCommand*)command;
-/*Make out bond call to any numble*/
--(void)makeOutboundCall:(CDVInvokedUrlCommand*)command;
 /*Send chat message in room*/
 -(void)sendMessage:(CDVInvokedUrlCommand*)command;
 /*Send any tuype of data in room*/
@@ -151,6 +149,11 @@ Create Remore Player View
 -(void)removeAnnotationScreen:(CDVInvokedUrlCommand*)command;
 /*Hide Annotation Screen*/
 -(void)hideAnnotationScreen:(CDVInvokedUrlCommand*)command;
+
+#pragma - make outbond call
+/*initiate outbond call*/
+-(void)makeOutboundCall:(CDVInvokedUrlCommand*)command;
+
 #pragma -mark Chair Controller Methods
 /*This method for participent, Where he/she request for floor access*/
 -(void)requestFloor:(CDVInvokedUrlCommand*)command;
@@ -164,6 +167,12 @@ Create Remore Player View
 -(void)denyFloor:(CDVInvokedUrlCommand*)command;
 /*This method for Modaitore, Where he/she can releaseFloor any particepnt floor request*/
 -(void)releaseFloor:(CDVInvokedUrlCommand*)command;
+
+#pragma - make Pin/Unpin user
+/*This method for Modaitore, Where he/she can releaseFloor any particepnt floor request*/
+-(void)pinUsers:(CDVInvokedUrlCommand*)command;
+/*This method for Modaitore, Where he/she can releaseFloor any particepnt floor request*/
+-(void)unpinUsers:(CDVInvokedUrlCommand*)command;
 
 //Call Back Methods
 //Room Connected
@@ -262,4 +271,8 @@ Create Remore Player View
 -(void)onCancelledFloorRequest:(CDVInvokedUrlCommand*)command;
 -(void)onFinishedFloorRequest:(CDVInvokedUrlCommand*)command;
 
+#pragma -mark pin/unpin Callback
+-(void)onAckPinUsers:(CDVInvokedUrlCommand*)command;
+-(void)onAckUnpinUsers:(CDVInvokedUrlCommand*)command;
+-(void)onPinnedUsers:(CDVInvokedUrlCommand*)command;
 @end

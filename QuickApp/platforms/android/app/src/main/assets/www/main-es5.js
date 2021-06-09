@@ -561,7 +561,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! /Users/jaykumar/Desktop/Code/Codova/ionice/QuickApp/src/main.ts */
+    /*! /Users/pankajpandey/Desktop/Cordova/One-to-One-Video-Chat-Sample-Application-in-IONIC-Framework/QuickApp/src/main.ts */
     "./src/main.ts");
     /***/
   }

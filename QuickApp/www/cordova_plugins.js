@@ -45,18 +45,20 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "file": "plugins/enablex-cordova-plugin/www/enxcordovaplugin.js",
       "pluginId": "enablex-cordova-plugin",
       "clobbers": [
-        "EnxCordovaPlugin"
+        "EnxRtc"
       ],
       "runs": true
     }
   ];
   module.exports.metadata = {
+    "cordova-plugin-androidx-adapter": "1.1.3",
     "cordova-plugin-device": "2.0.2",
+    "cordova-plugin-enable-multidex": "0.2.0",
     "cordova-plugin-ionic-keyboard": "2.2.0",
     "cordova-plugin-ionic-webview": "4.2.1",
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "2.4.2",
     "cordova-plugin-whitelist": "1.3.3",
-    "enablex-cordova-plugin": "1.0.7"
+    "enablex-cordova-plugin": "1.9.2"
   };
 });

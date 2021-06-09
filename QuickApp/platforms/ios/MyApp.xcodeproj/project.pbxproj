@@ -20,12 +20,12 @@
 		776E9C76CA064ED983D400E2 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 584CA1B2150D4040BF366694 /* CDVViewController+SplashScreen.m */; };
 		77A9C0B714AE42DB993143B9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 792462A8EBEF4755B10D2784 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		7EFCABFACCF84A719A407CD4 /* CDVWKWebViewEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = F60F2A7E5B5749A9AD5AC01D /* CDVWKWebViewEngine.m */; };
-		8496E2407476426A02946007 /* Pods_MyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEC0575BE3C7B30D5F9CE6DF /* Pods_MyApp.framework */; };
+		8C14BAF54F27F61BE05F9C0C /* libPods-MyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5AC4B098B77CA90A8AEB9D /* libPods-MyApp.a */; };
 		A9D2018B917347AFA3F42255 /* CDVWKProcessPoolFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = D9109B78221E4981A674D49A /* CDVWKProcessPoolFactory.m */; };
-		C22757A6189B475C9FFE754D /* EnxCordovaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D5BE2F0C5C4789BC70B1C2 /* EnxCordovaPlugin.m */; };
 		D7818B0DF4AC459BA830F22A /* IONAssetHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 356761838B9B4EECB05BCDFA /* IONAssetHandler.m */; };
 		D817F36D4CFF45D7B3E9153A /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C015C7C205AE48FE89072CA2 /* CDVSplashScreen.m */; };
 		DCB1C1EE6D0147B5874ADA30 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8EA43AA37D413287AD80CC /* CDVStatusBar.m */; };
+		68042210876F4BEE91D7C97F /* EnxCordovaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D262D20471581091BF4 /* EnxCordovaPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,11 +71,10 @@
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* MyApp-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MyApp-Prefix.pch"; sourceTree = "<group>"; };
-		33D44AFFB4264F25B880226D /* EnxCordovaPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = EnxCordovaPlugin.h; path = "enablex-cordova-plugin/EnxCordovaPlugin.h"; sourceTree = "<group>"; };
 		356761838B9B4EECB05BCDFA /* IONAssetHandler.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IONAssetHandler.m; path = "cordova-plugin-ionic-webview/IONAssetHandler.m"; sourceTree = "<group>"; };
+		3A5AC4B098B77CA90A8AEB9D /* libPods-MyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42BF4D11361A4ED48E4C3766 /* CDVWKWebViewUIDelegate.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVWKWebViewUIDelegate.m; path = "cordova-plugin-ionic-webview/CDVWKWebViewUIDelegate.m"; sourceTree = "<group>"; };
 		584CA1B2150D4040BF366694 /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; };
-		60D5BE2F0C5C4789BC70B1C2 /* EnxCordovaPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = EnxCordovaPlugin.m; path = "enablex-cordova-plugin/EnxCordovaPlugin.m"; sourceTree = "<group>"; };
 		65198B45ABD74CEFAD9DAC9E /* CDVStatusBar.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = MyApp/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		77C1B81F123147F7B3016D17 /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
@@ -96,7 +95,8 @@
 		F2A24F9354D04C7E9F98AAEE /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; };
 		F60F2A7E5B5749A9AD5AC01D /* CDVWKWebViewEngine.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVWKWebViewEngine.m; path = "cordova-plugin-ionic-webview/CDVWKWebViewEngine.m"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = MyApp/config.xml; sourceTree = "<group>"; };
-		FEC0575BE3C7B30D5F9CE6DF /* Pods_MyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A170D262D20471581091BF4 /* EnxCordovaPlugin.m */ = {isa = PBXFileReference; name = "EnxCordovaPlugin.m"; path = "enablex-cordova-plugin/EnxCordovaPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		9F7339E9F96B4425A3569A0A /* EnxCordovaPlugin.h */ = {isa = PBXFileReference; name = "EnxCordovaPlugin.h"; path = "enablex-cordova-plugin/EnxCordovaPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				77A9C0B714AE42DB993143B9 /* WebKit.framework in Frameworks */,
-				8496E2407476426A02946007 /* Pods_MyApp.framework in Frameworks */,
+				8C14BAF54F27F61BE05F9C0C /* libPods-MyApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				792462A8EBEF4755B10D2784 /* WebKit.framework */,
-				FEC0575BE3C7B30D5F9CE6DF /* Pods_MyApp.framework */,
+				3A5AC4B098B77CA90A8AEB9D /* libPods-MyApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -224,8 +224,8 @@
 				1803B235F7CA43718ED354A2 /* IONAssetHandler.h */,
 				E92F0CCC375E499287719808 /* CDVIonicKeyboard.m */,
 				142360FF5A5D4314A4B011F5 /* CDVIonicKeyboard.h */,
-				60D5BE2F0C5C4789BC70B1C2 /* EnxCordovaPlugin.m */,
-				33D44AFFB4264F25B880226D /* EnxCordovaPlugin.h */,
+				3A170D262D20471581091BF4 /* EnxCordovaPlugin.m */,
+				9F7339E9F96B4425A3569A0A /* EnxCordovaPlugin.h */,
 			);
 			name = Plugins;
 			path = MyApp/Plugins;
@@ -262,7 +262,6 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
-				769341CAD717E92866C60E50 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -381,30 +380,6 @@
 			shellScript = "\"$SRCROOT/MyApp/Scripts/copy-www-build-step.sh\"";
 			showEnvVarsInLog = 0;
 		};
-		769341CAD717E92866C60E50 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks.sh",
-				"${PODS_ROOT}/EnxRTCiOS/EnxRTCiOS.framework",
-				"${PODS_ROOT}/GoogleWebRTC/Frameworks/frameworks/WebRTC.framework",
-				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
-				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EnxRTCiOS.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -424,7 +399,7 @@
 				A9D2018B917347AFA3F42255 /* CDVWKProcessPoolFactory.m in Sources */,
 				D7818B0DF4AC459BA830F22A /* IONAssetHandler.m in Sources */,
 				061B9C88B4B0488991F882BE /* CDVIonicKeyboard.m in Sources */,
-				C22757A6189B475C9FFE754D /* EnxCordovaPlugin.m in Sources */,
+				68042210876F4BEE91D7C97F /* EnxCordovaPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -49,7 +49,7 @@
               "count": 1
             },
             {
-              "xml": "<feature name=\"EnxCordovaPlugin\"><param name=\"ios-package\" onload=\"true\" value=\"EnxCordovaPlugin\" /></feature>",
+              "xml": "<feature name=\"EnxRtc\"><param name=\"ios-package\" onload=\"true\" value=\"EnxCordovaPlugin\" /></feature>",
               "count": 1
             }
           ]
@@ -77,6 +77,15 @@
       "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     },
     "enablex-cordova-plugin": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-enable-multidex": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-androidx": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-androidx-adapter": {
       "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     }
   },
@@ -135,7 +144,7 @@
       "file": "plugins/enablex-cordova-plugin/www/enxcordovaplugin.js",
       "pluginId": "enablex-cordova-plugin",
       "clobbers": [
-        "EnxCordovaPlugin"
+        "EnxRtc"
       ],
       "runs": true
     }
@@ -147,6 +156,9 @@
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-ionic-webview": "4.2.1",
     "cordova-plugin-ionic-keyboard": "2.2.0",
-    "enablex-cordova-plugin": "1.0.7"
+    "enablex-cordova-plugin": "1.9.2",
+    "cordova-plugin-enable-multidex": "0.2.0",
+    "cordova-plugin-androidx": "3.0.0",
+    "cordova-plugin-androidx-adapter": "1.1.3"
   }
 }
