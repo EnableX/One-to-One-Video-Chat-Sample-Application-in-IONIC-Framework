@@ -59,7 +59,67 @@ Once you tried EnableX ionic Sample Application, you may need to setup your own 
     
     `ionic cordova plugin add enablex-cordova-plugin@latest`
 
-#### 1.1.6 To remove Enalex Cordova plugin
+#### 1.1.6 How to setup cordova plugin Android/iOS
+
+### Android
+    
+After adding Cordova Enablex plugin
+### Step 1. 
+    Go to platfrom inside Cordova project and open Android folder
+
+    If Android platform already added, remove Android and add again using the below command: 
+    ionic cordova platform rm android && ionic cordova platform add android`
+    
+### Step 2. 
+    Set the Minimum SDK version and desugaring in gradle.properties file as shown:
+
+![group1](./group1.png) 
+
+    android.useAndroidX=true 
+    android.enableJetifier=true 
+    cdvMinSdkVersion=21 
+    android.enableDexingArtifactTransform.desugaring=false 
+    
+### Step 3. 
+
+    Add the required libraries like webrtc and socket in the project. properties file as shown below:
+    
+![group2](./group2.png) 
+    
+    cordova.system.library.7=org.webrtc:google-webrtc:1.0.32006 
+    cordova.system.library.8=io.socket:socket.io-client:1.0.0﻿ 
+    
+### Step 4. 
+
+    If you face “merge debug resource failed” error, then add packagingOptions in app level build.gradle file in android block 
+    
+    Execution failed for task ':app:mergeDebugJavaResource'. 
+        > A failure occurred while executing com.android.build.gradle.internal.tasks.Workers$ActionFacade 
+       > More than one file was found with OS independent path 'META-INF/DEPENDENCIES'.
+
+![group3](./group3.png) 
+       packagingOptions { 
+               exclude 'META-INF/DEPENDENCIES' 
+               exclude 'META-INF/LICENSE' 
+               exclude 'META-INF/LICENSE.txt' 
+               exclude 'META-INF/license.txt' 
+               exclude 'META-INF/NOTICE' 
+               exclude 'META-INF/NOTICE.txt' 
+               exclude 'META-INF/notice.txt' 
+               exclude 'META-INF/ASL2.0' 
+               exclude("META-INF/*.kotlin_module")  
+             } 
+
+### iOS
+    
+        After adding Cordova Enablex plugin please add ios project as below command
+        
+        ionic cordova platform add ios
+        
+        It will install all dependency enableX library through Pod. After that go to your iOS project folder and open your xcode , setup your certificate and then build the app either command line or through xcode. 
+    
+    
+#### 1.1.7 To remove Enalex Cordova plugin
 
 * Run the the following command in the root of your project:
 
