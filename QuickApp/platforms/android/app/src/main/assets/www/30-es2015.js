@@ -1,471 +1,383 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[30],{
 
-/***/ "./node_modules/@ionic/core/dist/esm/ion-item-option_3-ios.entry.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/@ionic/core/dist/esm/ion-item-option_3-ios.entry.js ***!
-  \**************************************************************************/
-/*! exports provided: ion_item_option, ion_item_options, ion_item_sliding */
+/***/ "./node_modules/@ionic/core/dist/esm/ion-searchbar.entry.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@ionic/core/dist/esm/ion-searchbar.entry.js ***!
+  \******************************************************************/
+/*! exports provided: ion_searchbar */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ion_item_option", function() { return ItemOption; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ion_item_options", function() { return ItemOptions; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ion_item_sliding", function() { return ItemSliding; });
-/* harmony import */ var _index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-29df6f59.js */ "./node_modules/@ionic/core/dist/esm/index-29df6f59.js");
-/* harmony import */ var _ionic_global_08f4fb8a_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ionic-global-08f4fb8a.js */ "./node_modules/@ionic/core/dist/esm/ionic-global-08f4fb8a.js");
-/* harmony import */ var _helpers_5c745fbd_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./helpers-5c745fbd.js */ "./node_modules/@ionic/core/dist/esm/helpers-5c745fbd.js");
-/* harmony import */ var _theme_3f0b0c04_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./theme-3f0b0c04.js */ "./node_modules/@ionic/core/dist/esm/theme-3f0b0c04.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ion_searchbar", function() { return Searchbar; });
+/* harmony import */ var _index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-7a8b7a1c.js */ "./node_modules/@ionic/core/dist/esm/index-7a8b7a1c.js");
+/* harmony import */ var _ionic_global_63a97a32_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ionic-global-63a97a32.js */ "./node_modules/@ionic/core/dist/esm/ionic-global-63a97a32.js");
+/* harmony import */ var _helpers_1457892a_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./helpers-1457892a.js */ "./node_modules/@ionic/core/dist/esm/helpers-1457892a.js");
+/* harmony import */ var _theme_ff3fc52f_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./theme-ff3fc52f.js */ "./node_modules/@ionic/core/dist/esm/theme-ff3fc52f.js");
 
 
 
 
 
-const itemOptionIosCss = ":host{--background:var(--ion-color-primary, #3880ff);--color:var(--ion-color-primary-contrast, #fff);background:var(--background);color:var(--color);font-family:var(--ion-font-family, inherit)}:host(.in-list.item-options-end:last-child){padding-right:calc(.7em + var(--ion-safe-area-right))}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){:host(.in-list.item-options-end:last-child){padding-right:unset;-webkit-padding-end:calc(.7em + var(--ion-safe-area-right));padding-inline-end:calc(.7em + var(--ion-safe-area-right))}}:host(.in-list.item-options-start:first-child){padding-left:calc(.7em + var(--ion-safe-area-left))}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){:host(.in-list.item-options-start:first-child){padding-left:unset;-webkit-padding-start:calc(.7em + var(--ion-safe-area-left));padding-inline-start:calc(.7em + var(--ion-safe-area-left))}}:host(.ion-color){background:var(--ion-color-base);color:var(--ion-color-contrast)}.button-native{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;text-decoration:inherit;text-indent:inherit;text-overflow:inherit;text-transform:inherit;text-align:inherit;white-space:inherit;color:inherit;padding-left:0.7em;padding-right:0.7em;padding-top:0;padding-bottom:0;display:inline-block;position:relative;width:100%;height:100%;border:0;outline:none;background:transparent;cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-box-sizing:border-box;box-sizing:border-box}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.button-native{padding-left:unset;padding-right:unset;-webkit-padding-start:0.7em;padding-inline-start:0.7em;-webkit-padding-end:0.7em;padding-inline-end:0.7em}}.button-inner{display:-ms-flexbox;display:flex;-ms-flex-flow:column nowrap;flex-flow:column nowrap;-ms-flex-negative:0;flex-shrink:0;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:100%;height:100%}.horizontal-wrapper{display:-ms-flexbox;display:flex;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-negative:0;flex-shrink:0;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:100%}::slotted(*){-ms-flex-negative:0;flex-shrink:0}::slotted([slot=start]){margin-left:0;margin-right:5px;margin-top:0;margin-bottom:0}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){::slotted([slot=start]){margin-left:unset;margin-right:unset;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:5px;margin-inline-end:5px}}::slotted([slot=end]){margin-left:5px;margin-right:0;margin-top:0;margin-bottom:0}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){::slotted([slot=end]){margin-left:unset;margin-right:unset;-webkit-margin-start:5px;margin-inline-start:5px;-webkit-margin-end:0;margin-inline-end:0}}::slotted([slot=icon-only]){padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;margin-left:10px;margin-right:10px;margin-top:0;margin-bottom:0;min-width:0.9em;font-size:1.8em}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){::slotted([slot=icon-only]){margin-left:unset;margin-right:unset;-webkit-margin-start:10px;margin-inline-start:10px;-webkit-margin-end:10px;margin-inline-end:10px}}:host(.item-option-expandable){-ms-flex-negative:0;flex-shrink:0;-webkit-transition-duration:0;transition-duration:0;-webkit-transition-property:none;transition-property:none;-webkit-transition-timing-function:cubic-bezier(0.65, 0.05, 0.36, 1);transition-timing-function:cubic-bezier(0.65, 0.05, 0.36, 1)}:host(.item-option-disabled){pointer-events:none}:host(.item-option-disabled) .button-native{cursor:default;opacity:0.5;pointer-events:none}:host{font-size:16px}:host(.ion-activated){background:var(--ion-color-primary-shade, #3171e0)}:host(.ion-color.ion-activated){background:var(--ion-color-shade)}";
+const searchbarIosCss = ".sc-ion-searchbar-ios-h{--placeholder-color:initial;--placeholder-font-style:initial;--placeholder-font-weight:initial;--placeholder-opacity:.5;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:-ms-flexbox;display:flex;position:relative;-ms-flex-align:center;align-items:center;width:100%;color:var(--color);font-family:var(--ion-font-family, inherit);-webkit-box-sizing:border-box;box-sizing:border-box}.ion-color.sc-ion-searchbar-ios-h{color:var(--ion-color-contrast)}.ion-color.sc-ion-searchbar-ios-h .searchbar-input.sc-ion-searchbar-ios{background:var(--ion-color-base)}.ion-color.sc-ion-searchbar-ios-h .searchbar-clear-button.sc-ion-searchbar-ios,.ion-color.sc-ion-searchbar-ios-h .searchbar-cancel-button.sc-ion-searchbar-ios,.ion-color.sc-ion-searchbar-ios-h .searchbar-search-icon.sc-ion-searchbar-ios{color:inherit}.searchbar-search-icon.sc-ion-searchbar-ios{color:var(--icon-color);pointer-events:none}.searchbar-input-container.sc-ion-searchbar-ios{display:block;position:relative;-ms-flex-negative:1;flex-shrink:1;width:100%}.searchbar-input.sc-ion-searchbar-ios{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;text-decoration:inherit;text-indent:inherit;text-overflow:inherit;text-transform:inherit;text-align:inherit;white-space:inherit;color:inherit;border-radius:var(--border-radius);display:block;width:100%;border:0;outline:none;background:var(--background);font-family:inherit;-webkit-box-shadow:var(--box-shadow);box-shadow:var(--box-shadow);-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none}.searchbar-input.sc-ion-searchbar-ios::-webkit-input-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.searchbar-input.sc-ion-searchbar-ios::-moz-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.searchbar-input.sc-ion-searchbar-ios:-ms-input-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.searchbar-input.sc-ion-searchbar-ios::-ms-input-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.searchbar-input.sc-ion-searchbar-ios::placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.searchbar-input.sc-ion-searchbar-ios::-webkit-search-cancel-button,.searchbar-input.sc-ion-searchbar-ios::-ms-clear{display:none}.searchbar-cancel-button.sc-ion-searchbar-ios{margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;display:none;height:100%;border:0;outline:none;color:var(--cancel-button-color);cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none}.searchbar-cancel-button.sc-ion-searchbar-ios>div.sc-ion-searchbar-ios{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:100%;height:100%}.searchbar-clear-button.sc-ion-searchbar-ios{margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;display:none;min-height:0;outline:none;color:var(--clear-button-color);-webkit-appearance:none;-moz-appearance:none;appearance:none}.searchbar-has-value.searchbar-should-show-clear.sc-ion-searchbar-ios-h .searchbar-clear-button.sc-ion-searchbar-ios{display:block}.searchbar-disabled.sc-ion-searchbar-ios-h{cursor:default;opacity:0.4;pointer-events:none}.sc-ion-searchbar-ios-h{--background:rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.07);--border-radius:10px;--box-shadow:none;--cancel-button-color:var(--ion-color-primary, #3880ff);--clear-button-color:var(--ion-color-step-600, #666666);--color:var(--ion-text-color, #000);--icon-color:var(--ion-color-step-600, #666666);padding-left:12px;padding-right:12px;padding-top:12px;padding-bottom:12px;height:60px;contain:strict}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.sc-ion-searchbar-ios-h{padding-left:unset;padding-right:unset;-webkit-padding-start:12px;padding-inline-start:12px;-webkit-padding-end:12px;padding-inline-end:12px}}.searchbar-input-container.sc-ion-searchbar-ios{height:36px}.searchbar-search-icon.sc-ion-searchbar-ios{margin-left:calc(50% - 60px);left:5px;top:0;position:absolute;width:22px;height:100%;contain:strict}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.searchbar-search-icon.sc-ion-searchbar-ios{margin-left:unset;-webkit-margin-start:calc(50% - 60px);margin-inline-start:calc(50% - 60px)}}[dir=rtl].sc-ion-searchbar-ios .searchbar-search-icon.sc-ion-searchbar-ios,[dir=rtl].sc-ion-searchbar-ios-h .searchbar-search-icon.sc-ion-searchbar-ios,[dir=rtl] .sc-ion-searchbar-ios-h .searchbar-search-icon.sc-ion-searchbar-ios{left:unset;right:unset;right:5px}.searchbar-input.sc-ion-searchbar-ios{padding-left:28px;padding-right:28px;padding-top:0;padding-bottom:0;height:100%;font-size:17px;font-weight:400;contain:strict}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.searchbar-input.sc-ion-searchbar-ios{padding-left:unset;padding-right:unset;-webkit-padding-start:28px;padding-inline-start:28px;-webkit-padding-end:28px;padding-inline-end:28px}}.searchbar-clear-button.sc-ion-searchbar-ios{right:0;top:0;background-position:center;position:absolute;width:30px;height:100%;border:0;background-color:transparent}[dir=rtl].sc-ion-searchbar-ios .searchbar-clear-button.sc-ion-searchbar-ios,[dir=rtl].sc-ion-searchbar-ios-h .searchbar-clear-button.sc-ion-searchbar-ios,[dir=rtl] .sc-ion-searchbar-ios-h .searchbar-clear-button.sc-ion-searchbar-ios{left:unset;right:unset;left:0}.searchbar-clear-icon.sc-ion-searchbar-ios{width:18px;height:100%}.searchbar-cancel-button.sc-ion-searchbar-ios{padding-left:8px;padding-right:0;padding-top:0;padding-bottom:0;-ms-flex-negative:0;flex-shrink:0;background-color:transparent;font-size:16px}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.searchbar-cancel-button.sc-ion-searchbar-ios{padding-left:unset;padding-right:unset;-webkit-padding-start:8px;padding-inline-start:8px;-webkit-padding-end:0;padding-inline-end:0}}.searchbar-left-aligned.sc-ion-searchbar-ios-h .searchbar-search-icon.sc-ion-searchbar-ios{margin-left:0}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.searchbar-left-aligned.sc-ion-searchbar-ios-h .searchbar-search-icon.sc-ion-searchbar-ios{margin-left:unset;-webkit-margin-start:0;margin-inline-start:0}}.searchbar-left-aligned.sc-ion-searchbar-ios-h .searchbar-input.sc-ion-searchbar-ios{padding-left:30px}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.searchbar-left-aligned.sc-ion-searchbar-ios-h .searchbar-input.sc-ion-searchbar-ios{padding-left:unset;-webkit-padding-start:30px;padding-inline-start:30px}}.searchbar-has-focus.sc-ion-searchbar-ios-h .searchbar-cancel-button.sc-ion-searchbar-ios,.searchbar-should-show-cancel.sc-ion-searchbar-ios-h .searchbar-cancel-button.sc-ion-searchbar-ios,.searchbar-animated.sc-ion-searchbar-ios-h .searchbar-cancel-button.sc-ion-searchbar-ios{display:block}.searchbar-animated.sc-ion-searchbar-ios-h .searchbar-search-icon.sc-ion-searchbar-ios,.searchbar-animated.sc-ion-searchbar-ios-h .searchbar-input.sc-ion-searchbar-ios{-webkit-transition:all 300ms ease;transition:all 300ms ease}.searchbar-animated.searchbar-has-focus.sc-ion-searchbar-ios-h .searchbar-cancel-button.sc-ion-searchbar-ios,.searchbar-animated.searchbar-should-show-cancel.sc-ion-searchbar-ios-h .searchbar-cancel-button.sc-ion-searchbar-ios{opacity:1;pointer-events:auto}.searchbar-animated.sc-ion-searchbar-ios-h .searchbar-cancel-button.sc-ion-searchbar-ios{margin-right:-100%;-webkit-transform:translate3d(0,  0,  0);transform:translate3d(0,  0,  0);-webkit-transition:all 300ms ease;transition:all 300ms ease;opacity:0;pointer-events:none}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.searchbar-animated.sc-ion-searchbar-ios-h .searchbar-cancel-button.sc-ion-searchbar-ios{margin-right:unset;-webkit-margin-end:-100%;margin-inline-end:-100%}}.searchbar-no-animate.sc-ion-searchbar-ios-h .searchbar-search-icon.sc-ion-searchbar-ios,.searchbar-no-animate.sc-ion-searchbar-ios-h .searchbar-input.sc-ion-searchbar-ios,.searchbar-no-animate.sc-ion-searchbar-ios-h .searchbar-cancel-button.sc-ion-searchbar-ios{-webkit-transition-duration:0ms;transition-duration:0ms}.ion-color.sc-ion-searchbar-ios-h .searchbar-cancel-button.sc-ion-searchbar-ios{color:var(--ion-color-base)}@media (any-hover: hover){.ion-color.sc-ion-searchbar-ios-h .searchbar-cancel-button.sc-ion-searchbar-ios:hover{color:var(--ion-color-tint)}}ion-toolbar.sc-ion-searchbar-ios-h,ion-toolbar .sc-ion-searchbar-ios-h{padding-top:1px;padding-bottom:15px;height:52px}ion-toolbar.ion-color.sc-ion-searchbar-ios-h:not(.ion-color),ion-toolbar.ion-color .sc-ion-searchbar-ios-h:not(.ion-color){color:inherit}ion-toolbar.ion-color.sc-ion-searchbar-ios-h:not(.ion-color) .searchbar-cancel-button.sc-ion-searchbar-ios,ion-toolbar.ion-color .sc-ion-searchbar-ios-h:not(.ion-color) .searchbar-cancel-button.sc-ion-searchbar-ios{color:currentColor}ion-toolbar.ion-color.sc-ion-searchbar-ios-h .searchbar-search-icon.sc-ion-searchbar-ios,ion-toolbar.ion-color .sc-ion-searchbar-ios-h .searchbar-search-icon.sc-ion-searchbar-ios{color:currentColor;opacity:0.5}ion-toolbar.ion-color.sc-ion-searchbar-ios-h:not(.ion-color) .searchbar-input.sc-ion-searchbar-ios,ion-toolbar.ion-color .sc-ion-searchbar-ios-h:not(.ion-color) .searchbar-input.sc-ion-searchbar-ios{background:rgba(var(--ion-color-contrast-rgb), 0.07);color:currentColor}ion-toolbar.ion-color.sc-ion-searchbar-ios-h:not(.ion-color) .searchbar-clear-button.sc-ion-searchbar-ios,ion-toolbar.ion-color .sc-ion-searchbar-ios-h:not(.ion-color) .searchbar-clear-button.sc-ion-searchbar-ios{color:currentColor;opacity:0.5}";
 
-const itemOptionMdCss = ":host{--background:var(--ion-color-primary, #3880ff);--color:var(--ion-color-primary-contrast, #fff);background:var(--background);color:var(--color);font-family:var(--ion-font-family, inherit)}:host(.in-list.item-options-end:last-child){padding-right:calc(.7em + var(--ion-safe-area-right))}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){:host(.in-list.item-options-end:last-child){padding-right:unset;-webkit-padding-end:calc(.7em + var(--ion-safe-area-right));padding-inline-end:calc(.7em + var(--ion-safe-area-right))}}:host(.in-list.item-options-start:first-child){padding-left:calc(.7em + var(--ion-safe-area-left))}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){:host(.in-list.item-options-start:first-child){padding-left:unset;-webkit-padding-start:calc(.7em + var(--ion-safe-area-left));padding-inline-start:calc(.7em + var(--ion-safe-area-left))}}:host(.ion-color){background:var(--ion-color-base);color:var(--ion-color-contrast)}.button-native{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;text-decoration:inherit;text-indent:inherit;text-overflow:inherit;text-transform:inherit;text-align:inherit;white-space:inherit;color:inherit;padding-left:0.7em;padding-right:0.7em;padding-top:0;padding-bottom:0;display:inline-block;position:relative;width:100%;height:100%;border:0;outline:none;background:transparent;cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none;-webkit-box-sizing:border-box;box-sizing:border-box}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.button-native{padding-left:unset;padding-right:unset;-webkit-padding-start:0.7em;padding-inline-start:0.7em;-webkit-padding-end:0.7em;padding-inline-end:0.7em}}.button-inner{display:-ms-flexbox;display:flex;-ms-flex-flow:column nowrap;flex-flow:column nowrap;-ms-flex-negative:0;flex-shrink:0;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:100%;height:100%}.horizontal-wrapper{display:-ms-flexbox;display:flex;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-ms-flex-negative:0;flex-shrink:0;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:100%}::slotted(*){-ms-flex-negative:0;flex-shrink:0}::slotted([slot=start]){margin-left:0;margin-right:5px;margin-top:0;margin-bottom:0}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){::slotted([slot=start]){margin-left:unset;margin-right:unset;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:5px;margin-inline-end:5px}}::slotted([slot=end]){margin-left:5px;margin-right:0;margin-top:0;margin-bottom:0}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){::slotted([slot=end]){margin-left:unset;margin-right:unset;-webkit-margin-start:5px;margin-inline-start:5px;-webkit-margin-end:0;margin-inline-end:0}}::slotted([slot=icon-only]){padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;margin-left:10px;margin-right:10px;margin-top:0;margin-bottom:0;min-width:0.9em;font-size:1.8em}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){::slotted([slot=icon-only]){margin-left:unset;margin-right:unset;-webkit-margin-start:10px;margin-inline-start:10px;-webkit-margin-end:10px;margin-inline-end:10px}}:host(.item-option-expandable){-ms-flex-negative:0;flex-shrink:0;-webkit-transition-duration:0;transition-duration:0;-webkit-transition-property:none;transition-property:none;-webkit-transition-timing-function:cubic-bezier(0.65, 0.05, 0.36, 1);transition-timing-function:cubic-bezier(0.65, 0.05, 0.36, 1)}:host(.item-option-disabled){pointer-events:none}:host(.item-option-disabled) .button-native{cursor:default;opacity:0.5;pointer-events:none}:host{font-size:14px;font-weight:500;text-transform:uppercase}";
+const searchbarMdCss = ".sc-ion-searchbar-md-h{--placeholder-color:initial;--placeholder-font-style:initial;--placeholder-font-weight:initial;--placeholder-opacity:.5;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:-ms-flexbox;display:flex;position:relative;-ms-flex-align:center;align-items:center;width:100%;color:var(--color);font-family:var(--ion-font-family, inherit);-webkit-box-sizing:border-box;box-sizing:border-box}.ion-color.sc-ion-searchbar-md-h{color:var(--ion-color-contrast)}.ion-color.sc-ion-searchbar-md-h .searchbar-input.sc-ion-searchbar-md{background:var(--ion-color-base)}.ion-color.sc-ion-searchbar-md-h .searchbar-clear-button.sc-ion-searchbar-md,.ion-color.sc-ion-searchbar-md-h .searchbar-cancel-button.sc-ion-searchbar-md,.ion-color.sc-ion-searchbar-md-h .searchbar-search-icon.sc-ion-searchbar-md{color:inherit}.searchbar-search-icon.sc-ion-searchbar-md{color:var(--icon-color);pointer-events:none}.searchbar-input-container.sc-ion-searchbar-md{display:block;position:relative;-ms-flex-negative:1;flex-shrink:1;width:100%}.searchbar-input.sc-ion-searchbar-md{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;text-decoration:inherit;text-indent:inherit;text-overflow:inherit;text-transform:inherit;text-align:inherit;white-space:inherit;color:inherit;border-radius:var(--border-radius);display:block;width:100%;border:0;outline:none;background:var(--background);font-family:inherit;-webkit-box-shadow:var(--box-shadow);box-shadow:var(--box-shadow);-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;appearance:none}.searchbar-input.sc-ion-searchbar-md::-webkit-input-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.searchbar-input.sc-ion-searchbar-md::-moz-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.searchbar-input.sc-ion-searchbar-md:-ms-input-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.searchbar-input.sc-ion-searchbar-md::-ms-input-placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.searchbar-input.sc-ion-searchbar-md::placeholder{color:var(--placeholder-color);font-family:inherit;font-style:var(--placeholder-font-style);font-weight:var(--placeholder-font-weight);opacity:var(--placeholder-opacity)}.searchbar-input.sc-ion-searchbar-md::-webkit-search-cancel-button,.searchbar-input.sc-ion-searchbar-md::-ms-clear{display:none}.searchbar-cancel-button.sc-ion-searchbar-md{margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;display:none;height:100%;border:0;outline:none;color:var(--cancel-button-color);cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none}.searchbar-cancel-button.sc-ion-searchbar-md>div.sc-ion-searchbar-md{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;width:100%;height:100%}.searchbar-clear-button.sc-ion-searchbar-md{margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;display:none;min-height:0;outline:none;color:var(--clear-button-color);-webkit-appearance:none;-moz-appearance:none;appearance:none}.searchbar-has-value.searchbar-should-show-clear.sc-ion-searchbar-md-h .searchbar-clear-button.sc-ion-searchbar-md{display:block}.searchbar-disabled.sc-ion-searchbar-md-h{cursor:default;opacity:0.4;pointer-events:none}.sc-ion-searchbar-md-h{--background:var(--ion-background-color, #fff);--border-radius:2px;--box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);--cancel-button-color:var(--ion-color-step-900, #1a1a1a);--clear-button-color:initial;--color:var(--ion-color-step-850, #262626);--icon-color:var(--ion-color-step-600, #666666);padding-left:8px;padding-right:8px;padding-top:8px;padding-bottom:8px;background:inherit}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.sc-ion-searchbar-md-h{padding-left:unset;padding-right:unset;-webkit-padding-start:8px;padding-inline-start:8px;-webkit-padding-end:8px;padding-inline-end:8px}}.searchbar-search-icon.sc-ion-searchbar-md{left:16px;top:11px;width:21px;height:21px}[dir=rtl].sc-ion-searchbar-md .searchbar-search-icon.sc-ion-searchbar-md,[dir=rtl].sc-ion-searchbar-md-h .searchbar-search-icon.sc-ion-searchbar-md,[dir=rtl] .sc-ion-searchbar-md-h .searchbar-search-icon.sc-ion-searchbar-md{left:unset;right:unset;right:16px}.searchbar-cancel-button.sc-ion-searchbar-md{left:5px;top:0;background-color:transparent;font-size:1.6em}[dir=rtl].sc-ion-searchbar-md .searchbar-cancel-button.sc-ion-searchbar-md,[dir=rtl].sc-ion-searchbar-md-h .searchbar-cancel-button.sc-ion-searchbar-md,[dir=rtl] .sc-ion-searchbar-md-h .searchbar-cancel-button.sc-ion-searchbar-md{left:unset;right:unset;right:5px}.searchbar-search-icon.sc-ion-searchbar-md,.searchbar-cancel-button.sc-ion-searchbar-md{position:absolute}.searchbar-search-icon.ion-activated.sc-ion-searchbar-md,.searchbar-cancel-button.ion-activated.sc-ion-searchbar-md{background-color:transparent}.searchbar-input.sc-ion-searchbar-md{padding-left:55px;padding-right:55px;padding-top:6px;padding-bottom:6px;background-position:left 8px center;height:auto;font-size:16px;font-weight:400;line-height:30px}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.searchbar-input.sc-ion-searchbar-md{padding-left:unset;padding-right:unset;-webkit-padding-start:55px;padding-inline-start:55px;-webkit-padding-end:55px;padding-inline-end:55px}}[dir=rtl].sc-ion-searchbar-md .searchbar-input.sc-ion-searchbar-md,[dir=rtl].sc-ion-searchbar-md-h .searchbar-input.sc-ion-searchbar-md,[dir=rtl] .sc-ion-searchbar-md-h .searchbar-input.sc-ion-searchbar-md{background-position:right 8px center}.searchbar-clear-button.sc-ion-searchbar-md{right:13px;top:0;padding-left:0;padding-right:0;padding-top:0;padding-bottom:0;position:absolute;height:100%;border:0;background-color:transparent}[dir=rtl].sc-ion-searchbar-md .searchbar-clear-button.sc-ion-searchbar-md,[dir=rtl].sc-ion-searchbar-md-h .searchbar-clear-button.sc-ion-searchbar-md,[dir=rtl] .sc-ion-searchbar-md-h .searchbar-clear-button.sc-ion-searchbar-md{left:unset;right:unset;left:13px}.searchbar-clear-button.ion-activated.sc-ion-searchbar-md{background-color:transparent}.searchbar-clear-icon.sc-ion-searchbar-md{width:22px;height:100%}.searchbar-has-focus.sc-ion-searchbar-md-h .searchbar-search-icon.sc-ion-searchbar-md{display:block}.searchbar-has-focus.sc-ion-searchbar-md-h .searchbar-cancel-button.sc-ion-searchbar-md,.searchbar-should-show-cancel.sc-ion-searchbar-md-h .searchbar-cancel-button.sc-ion-searchbar-md{display:block}.searchbar-has-focus.sc-ion-searchbar-md-h .searchbar-cancel-button.sc-ion-searchbar-md+.searchbar-search-icon.sc-ion-searchbar-md,.searchbar-should-show-cancel.sc-ion-searchbar-md-h .searchbar-cancel-button.sc-ion-searchbar-md+.searchbar-search-icon.sc-ion-searchbar-md{display:none}ion-toolbar.sc-ion-searchbar-md-h,ion-toolbar .sc-ion-searchbar-md-h{padding-left:7px;padding-right:7px;padding-top:3px;padding-bottom:3px}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){ion-toolbar.sc-ion-searchbar-md-h,ion-toolbar .sc-ion-searchbar-md-h{padding-left:unset;padding-right:unset;-webkit-padding-start:7px;padding-inline-start:7px;-webkit-padding-end:7px;padding-inline-end:7px}}";
 
-/**
- * @virtualProp {"ios" | "md"} mode - The mode determines which platform styles to use.
- *
- * @slot - Content is placed between the named slots if provided without a slot.
- * @slot start - Content is placed to the left of the option text in LTR, and to the right in RTL.
- * @slot top - Content is placed above the option text.
- * @slot icon-only - Should be used on an icon in an option that has no text.
- * @slot bottom - Content is placed below the option text.
- * @slot end - Content is placed to the right of the option text in LTR, and to the left in RTL.
- *
- * @part native - The native HTML button or anchor element that wraps all child elements.
- */
-class ItemOption {
-    constructor(hostRef) {
-        Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        /**
-         * If `true`, the user cannot interact with the item option.
-         */
-        this.disabled = false;
-        /**
-         * If `true`, the option will expand to take up the available width and cover any other options.
-         */
-        this.expandable = false;
-        /**
-         * The type of the button.
-         */
-        this.type = 'button';
-        this.onClick = (ev) => {
-            const el = ev.target.closest('ion-item-option');
-            if (el) {
-                ev.preventDefault();
-            }
-        };
-    }
-    render() {
-        const { disabled, expandable, href } = this;
-        const TagType = href === undefined ? 'button' : 'a';
-        const mode = Object(_ionic_global_08f4fb8a_js__WEBPACK_IMPORTED_MODULE_1__["b"])(this);
-        const attrs = (TagType === 'button')
-            ? { type: this.type }
-            : {
-                download: this.download,
-                href: this.href,
-                target: this.target
-            };
-        return (Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["H"], { onClick: this.onClick, class: Object.assign(Object.assign({}, Object(_theme_3f0b0c04_js__WEBPACK_IMPORTED_MODULE_3__["c"])(this.color)), { [mode]: true, 'item-option-disabled': disabled, 'item-option-expandable': expandable, 'ion-activatable': true }) }, Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["h"])(TagType, Object.assign({}, attrs, { class: "button-native", part: "native", disabled: disabled }), Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["h"])("span", { class: "button-inner" }, Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "top" }), Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "horizontal-wrapper" }, Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "start" }), Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "icon-only" }), Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", null), Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "end" })), Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["h"])("slot", { name: "bottom" })), mode === 'md' && Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ion-ripple-effect", null))));
-    }
-    get el() { return Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); }
-}
-ItemOption.style = {
-    /*STENCIL:MODE:ios*/ ios: itemOptionIosCss,
-    /*STENCIL:MODE:md*/ md: itemOptionMdCss
-};
-
-const itemOptionsIosCss = "ion-item-options{top:0;right:0;-ms-flex-pack:end;justify-content:flex-end;display:none;position:absolute;height:100%;font-size:14px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;z-index:1}[dir=rtl] ion-item-options,:host-context([dir=rtl]) ion-item-options{-ms-flex-pack:start;justify-content:flex-start}[dir=rtl] ion-item-options:not(.item-options-end),:host-context([dir=rtl]) ion-item-options:not(.item-options-end){right:auto;left:0;-ms-flex-pack:end;justify-content:flex-end}.item-options-start{right:auto;left:0;-ms-flex-pack:start;justify-content:flex-start}[dir=rtl] .item-options-start,:host-context([dir=rtl]) .item-options-start{-ms-flex-pack:end;justify-content:flex-end}.item-options-start ion-item-option:first-child{padding-right:var(--ion-safe-area-left)}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.item-options-start ion-item-option:first-child{padding-right:unset;-webkit-padding-end:var(--ion-safe-area-left);padding-inline-end:var(--ion-safe-area-left)}}.item-options-end ion-item-option:last-child{padding-right:var(--ion-safe-area-right)}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.item-options-end ion-item-option:last-child{padding-right:unset;-webkit-padding-end:var(--ion-safe-area-right);padding-inline-end:var(--ion-safe-area-right)}}[dir=rtl] .item-sliding-active-slide.item-sliding-active-options-start ion-item-options:not(.item-options-end),:host-context([dir=rtl]) .item-sliding-active-slide.item-sliding-active-options-start ion-item-options:not(.item-options-end){width:100%;visibility:visible}.item-sliding-active-slide ion-item-options{display:-ms-flexbox;display:flex;visibility:hidden}.item-sliding-active-slide.item-sliding-active-options-start .item-options-start,.item-sliding-active-slide.item-sliding-active-options-end ion-item-options:not(.item-options-start){width:100%;visibility:visible}.item-options-ios{border-bottom-width:0;border-bottom-style:solid;border-bottom-color:var(--ion-item-border-color, var(--ion-border-color, var(--ion-color-step-250, #c8c7cc)))}.item-options-ios.item-options-end{border-bottom-width:0.55px}.list-ios-lines-none .item-options-ios{border-bottom-width:0}.list-ios-lines-full .item-options-ios,.list-ios-lines-inset .item-options-ios.item-options-end{border-bottom-width:0.55px}";
-
-const itemOptionsMdCss = "ion-item-options{top:0;right:0;-ms-flex-pack:end;justify-content:flex-end;display:none;position:absolute;height:100%;font-size:14px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;z-index:1}[dir=rtl] ion-item-options,:host-context([dir=rtl]) ion-item-options{-ms-flex-pack:start;justify-content:flex-start}[dir=rtl] ion-item-options:not(.item-options-end),:host-context([dir=rtl]) ion-item-options:not(.item-options-end){right:auto;left:0;-ms-flex-pack:end;justify-content:flex-end}.item-options-start{right:auto;left:0;-ms-flex-pack:start;justify-content:flex-start}[dir=rtl] .item-options-start,:host-context([dir=rtl]) .item-options-start{-ms-flex-pack:end;justify-content:flex-end}.item-options-start ion-item-option:first-child{padding-right:var(--ion-safe-area-left)}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.item-options-start ion-item-option:first-child{padding-right:unset;-webkit-padding-end:var(--ion-safe-area-left);padding-inline-end:var(--ion-safe-area-left)}}.item-options-end ion-item-option:last-child{padding-right:var(--ion-safe-area-right)}@supports ((-webkit-margin-start: 0) or (margin-inline-start: 0)) or (-webkit-margin-start: 0){.item-options-end ion-item-option:last-child{padding-right:unset;-webkit-padding-end:var(--ion-safe-area-right);padding-inline-end:var(--ion-safe-area-right)}}[dir=rtl] .item-sliding-active-slide.item-sliding-active-options-start ion-item-options:not(.item-options-end),:host-context([dir=rtl]) .item-sliding-active-slide.item-sliding-active-options-start ion-item-options:not(.item-options-end){width:100%;visibility:visible}.item-sliding-active-slide ion-item-options{display:-ms-flexbox;display:flex;visibility:hidden}.item-sliding-active-slide.item-sliding-active-options-start .item-options-start,.item-sliding-active-slide.item-sliding-active-options-end ion-item-options:not(.item-options-start){width:100%;visibility:visible}.item-options-md{border-bottom-width:0;border-bottom-style:solid;border-bottom-color:var(--ion-item-border-color, var(--ion-border-color, var(--ion-color-step-150, rgba(0, 0, 0, 0.13))))}.list-md-lines-none .item-options-md{border-bottom-width:0}.list-md-lines-full .item-options-md,.list-md-lines-inset .item-options-md.item-options-end{border-bottom-width:1px}";
-
-class ItemOptions {
-    constructor(hostRef) {
-        Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        /**
-         * The side the option button should be on. Possible values: `"start"` and `"end"`. If you have multiple `ion-item-options`, a side must be provided for each.
-         *
-         */
-        this.side = 'end';
-        this.ionSwipe = Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "ionSwipe", 7);
-    }
-    /** @internal */
-    async fireSwipeEvent() {
-        this.ionSwipe.emit({
-            side: this.side
-        });
-    }
-    render() {
-        const mode = Object(_ionic_global_08f4fb8a_js__WEBPACK_IMPORTED_MODULE_1__["b"])(this);
-        const isEnd = Object(_helpers_5c745fbd_js__WEBPACK_IMPORTED_MODULE_2__["i"])(this.side);
-        return (Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: {
-                [mode]: true,
-                // Used internally for styling
-                [`item-options-${mode}`]: true,
-                'item-options-start': !isEnd,
-                'item-options-end': isEnd
-            } }));
-    }
-    get el() { return Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); }
-}
-ItemOptions.style = {
-    /*STENCIL:MODE:ios*/ ios: itemOptionsIosCss,
-    /*STENCIL:MODE:md*/ md: itemOptionsMdCss
-};
-
-const itemSlidingCss = "ion-item-sliding{display:block;position:relative;width:100%;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}ion-item-sliding .item{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.item-sliding-active-slide .item{position:relative;-webkit-transition:-webkit-transform 500ms cubic-bezier(0.36, 0.66, 0.04, 1);transition:-webkit-transform 500ms cubic-bezier(0.36, 0.66, 0.04, 1);transition:transform 500ms cubic-bezier(0.36, 0.66, 0.04, 1);transition:transform 500ms cubic-bezier(0.36, 0.66, 0.04, 1), -webkit-transform 500ms cubic-bezier(0.36, 0.66, 0.04, 1);opacity:1;z-index:2;pointer-events:none;will-change:transform}.item-sliding-active-swipe-end .item-options-end .item-option-expandable{padding-left:100%;-ms-flex-order:1;order:1;-webkit-transition-duration:0.6s;transition-duration:0.6s;-webkit-transition-property:padding-left;transition-property:padding-left}[dir=rtl] .item-sliding-active-swipe-end .item-options-end .item-option-expandable,:host-context([dir=rtl]) .item-sliding-active-swipe-end .item-options-end .item-option-expandable{-ms-flex-order:-1;order:-1}.item-sliding-active-swipe-start .item-options-start .item-option-expandable{padding-right:100%;-ms-flex-order:-1;order:-1;-webkit-transition-duration:0.6s;transition-duration:0.6s;-webkit-transition-property:padding-right;transition-property:padding-right}[dir=rtl] .item-sliding-active-swipe-start .item-options-start .item-option-expandable,:host-context([dir=rtl]) .item-sliding-active-swipe-start .item-options-start .item-option-expandable{-ms-flex-order:1;order:1}";
-
-const SWIPE_MARGIN = 30;
-const ELASTIC_FACTOR = 0.55;
-let openSlidingItem;
-class ItemSliding {
-    constructor(hostRef) {
-        Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.item = null;
-        this.openAmount = 0;
-        this.initialOpenAmount = 0;
-        this.optsWidthRightSide = 0;
-        this.optsWidthLeftSide = 0;
-        this.sides = 0 /* None */;
-        this.optsDirty = true;
-        this.state = 2 /* Disabled */;
-        /**
-         * If `true`, the user cannot interact with the sliding item.
-         */
-        this.disabled = false;
-        this.ionDrag = Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "ionDrag", 7);
-    }
-    disabledChanged() {
-        if (this.gesture) {
-            this.gesture.enable(!this.disabled);
-        }
-    }
-    async connectedCallback() {
-        this.item = this.el.querySelector('ion-item');
-        await this.updateOptions();
-        this.gesture = (await Promise.resolve(/*! import() */).then(__webpack_require__.bind(null, /*! ./index-eea61379.js */ "./node_modules/@ionic/core/dist/esm/index-eea61379.js"))).createGesture({
-            el: this.el,
-            gestureName: 'item-swipe',
-            gesturePriority: 100,
-            threshold: 5,
-            canStart: ev => this.canStart(ev),
-            onStart: () => this.onStart(),
-            onMove: ev => this.onMove(ev),
-            onEnd: ev => this.onEnd(ev),
-        });
-        this.disabledChanged();
-    }
-    disconnectedCallback() {
-        if (this.gesture) {
-            this.gesture.destroy();
-            this.gesture = undefined;
-        }
-        this.item = null;
-        this.leftOptions = this.rightOptions = undefined;
-        if (openSlidingItem === this.el) {
-            openSlidingItem = undefined;
-        }
-    }
+const Searchbar = class {
+  constructor(hostRef) {
+    Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+    this.ionInput = Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this, "ionInput", 7);
+    this.ionChange = Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this, "ionChange", 7);
+    this.ionCancel = Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this, "ionCancel", 7);
+    this.ionClear = Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this, "ionClear", 7);
+    this.ionBlur = Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this, "ionBlur", 7);
+    this.ionFocus = Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this, "ionFocus", 7);
+    this.ionStyle = Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this, "ionStyle", 7);
+    this.isCancelVisible = false;
+    this.shouldAlignLeft = true;
+    this.focused = false;
+    this.noAnimate = true;
     /**
-     * Get the amount the item is open in pixels.
+     * If `true`, enable searchbar animation.
      */
-    getOpenAmount() {
-        return Promise.resolve(this.openAmount);
-    }
+    this.animated = false;
     /**
-     * Get the ratio of the open amount of the item compared to the width of the options.
-     * If the number returned is positive, then the options on the right side are open.
-     * If the number returned is negative, then the options on the left side are open.
-     * If the absolute value of the number is greater than 1, the item is open more than
-     * the width of the options.
+     * Set the input's autocomplete property.
      */
-    getSlidingRatio() {
-        return Promise.resolve(this.getSlidingRatioSync());
-    }
+    this.autocomplete = 'off';
     /**
-     * Open the sliding item.
+     * Set the input's autocorrect property.
+     */
+    this.autocorrect = 'off';
+    /**
+     * Set the cancel button icon. Only applies to `md` mode.
+     * Defaults to `"arrow-back-sharp"`.
+     */
+    this.cancelButtonIcon = _ionic_global_63a97a32_js__WEBPACK_IMPORTED_MODULE_1__["c"].get('backButtonIcon', 'arrow-back-sharp');
+    /**
+     * Set the the cancel button text. Only applies to `ios` mode.
+     */
+    this.cancelButtonText = 'Cancel';
+    /**
+     * Set the amount of time, in milliseconds, to wait to trigger the `ionChange` event after each keystroke. This also impacts form bindings such as `ngModel` or `v-model`.
+     */
+    this.debounce = 250;
+    /**
+     * If `true`, the user cannot interact with the input.
+     */
+    this.disabled = false;
+    /**
+     * Set the input's placeholder.
+     * `placeholder` can accept either plaintext or HTML as a string.
+     * To display characters normally reserved for HTML, they
+     * must be escaped. For example `<Ionic>` would become
+     * `&lt;Ionic&gt;`
      *
-     * @param side The side of the options to open. If a side is not provided, it will open the first set of options it finds within the item.
+     * For more information: [Security Documentation](https://ionicframework.com/docs/faq/security)
      */
-    async open(side) {
-        if (this.item === null) {
-            return;
-        }
-        const optionsToOpen = this.getOptions(side);
-        if (!optionsToOpen) {
-            return;
-        }
-        /**
-         * If side is not set, we need to infer the side
-         * so we know which direction to move the options
-         */
-        if (side === undefined) {
-            side = (optionsToOpen === this.leftOptions) ? 'start' : 'end';
-        }
-        // In RTL we want to switch the sides
-        side = Object(_helpers_5c745fbd_js__WEBPACK_IMPORTED_MODULE_2__["i"])(side) ? 'end' : 'start';
-        const isStartOpen = this.openAmount < 0;
-        const isEndOpen = this.openAmount > 0;
-        /**
-         * If a side is open and a user tries to
-         * re-open the same side, we should not do anything
-         */
-        if (isStartOpen && optionsToOpen === this.leftOptions) {
-            return;
-        }
-        if (isEndOpen && optionsToOpen === this.rightOptions) {
-            return;
-        }
-        this.closeOpened();
-        this.state = 4 /* Enabled */;
-        requestAnimationFrame(() => {
-            this.calculateOptsWidth();
-            const width = (side === 'end') ? this.optsWidthRightSide : -this.optsWidthLeftSide;
-            openSlidingItem = this.el;
-            this.setOpenAmount(width, false);
-            this.state = (side === 'end') ? 8 /* End */ : 16 /* Start */;
-        });
-    }
+    this.placeholder = 'Search';
     /**
-     * Close the sliding item. Items can also be closed from the [List](../list).
+     * Sets the behavior for the cancel button. Defaults to `"never"`.
+     * Setting to `"focus"` shows the cancel button on focus.
+     * Setting to `"never"` hides the cancel button.
+     * Setting to `"always"` shows the cancel button regardless
+     * of focus state.
      */
-    async close() {
-        this.setOpenAmount(0, true);
-    }
+    this.showCancelButton = 'never';
     /**
-     * Close all of the sliding items in the list. Items can also be closed from the [List](../list).
+     * Sets the behavior for the clear button. Defaults to `"focus"`.
+     * Setting to `"focus"` shows the clear button on focus if the
+     * input is not empty.
+     * Setting to `"never"` hides the clear button.
+     * Setting to `"always"` shows the clear button regardless
+     * of focus state, but only if the input is not empty.
      */
-    async closeOpened() {
-        if (openSlidingItem !== undefined) {
-            openSlidingItem.close();
-            openSlidingItem = undefined;
-            return true;
-        }
-        return false;
-    }
+    this.showClearButton = 'focus';
     /**
-     * Given an optional side, return the ion-item-options element.
-     *
-     * @param side This side of the options to get. If a side is not provided it will
-     * return the first one available.
+     * If `true`, enable spellcheck on the input.
      */
-    getOptions(side) {
-        if (side === undefined) {
-            return this.leftOptions || this.rightOptions;
+    this.spellcheck = false;
+    /**
+     * Set the type of the input.
+     */
+    this.type = 'search';
+    /**
+     * the value of the searchbar.
+     */
+    this.value = '';
+    /**
+     * Clears the input field and triggers the control change.
+     */
+    this.onClearInput = (ev, shouldFocus) => {
+      this.ionClear.emit();
+      if (ev) {
+        ev.preventDefault();
+        ev.stopPropagation();
+      }
+      // setTimeout() fixes https://github.com/ionic-team/ionic/issues/7527
+      // wait for 4 frames
+      setTimeout(() => {
+        const value = this.getValue();
+        if (value !== '') {
+          this.value = '';
+          this.ionInput.emit();
+          /**
+           * When tapping clear button
+           * ensure input is focused after
+           * clearing input so users
+           * can quickly start typing.
+           */
+          if (shouldFocus && !this.focused) {
+            this.setFocus();
+          }
         }
-        else if (side === 'start') {
-            return this.leftOptions;
+      }, 16 * 4);
+    };
+    /**
+     * Clears the input field and tells the input to blur since
+     * the clearInput function doesn't want the input to blur
+     * then calls the custom cancel function if the user passed one in.
+     */
+    this.onCancelSearchbar = (ev) => {
+      if (ev) {
+        ev.preventDefault();
+        ev.stopPropagation();
+      }
+      this.ionCancel.emit();
+      this.onClearInput();
+      if (this.nativeInput) {
+        this.nativeInput.blur();
+      }
+    };
+    /**
+     * Update the Searchbar input value when the input changes
+     */
+    this.onInput = (ev) => {
+      const input = ev.target;
+      if (input) {
+        this.value = input.value;
+      }
+      this.ionInput.emit(ev);
+    };
+    /**
+     * Sets the Searchbar to not focused and checks if it should align left
+     * based on whether there is a value in the searchbar or not.
+     */
+    this.onBlur = () => {
+      this.focused = false;
+      this.ionBlur.emit();
+      this.positionElements();
+    };
+    /**
+     * Sets the Searchbar to focused and active on input focus.
+     */
+    this.onFocus = () => {
+      this.focused = true;
+      this.ionFocus.emit();
+      this.positionElements();
+    };
+  }
+  debounceChanged() {
+    this.ionChange = Object(_helpers_1457892a_js__WEBPACK_IMPORTED_MODULE_2__["f"])(this.ionChange, this.debounce);
+  }
+  valueChanged() {
+    const inputEl = this.nativeInput;
+    const value = this.getValue();
+    if (inputEl && inputEl.value !== value) {
+      inputEl.value = value;
+    }
+    this.ionChange.emit({ value });
+  }
+  showCancelButtonChanged() {
+    requestAnimationFrame(() => {
+      this.positionElements();
+      Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["j"])(this);
+    });
+  }
+  connectedCallback() {
+    this.emitStyle();
+  }
+  componentDidLoad() {
+    this.positionElements();
+    this.debounceChanged();
+    setTimeout(() => {
+      this.noAnimate = false;
+    }, 300);
+  }
+  emitStyle() {
+    this.ionStyle.emit({
+      'searchbar': true
+    });
+  }
+  /**
+   * Sets focus on the specified `ion-searchbar`. Use this method instead of the global
+   * `input.focus()`.
+   */
+  async setFocus() {
+    if (this.nativeInput) {
+      this.nativeInput.focus();
+    }
+  }
+  /**
+   * Returns the native `<input>` element used under the hood.
+   */
+  getInputElement() {
+    return Promise.resolve(this.nativeInput);
+  }
+  /**
+   * Positions the input search icon, placeholder, and the cancel button
+   * based on the input value and if it is focused. (ios only)
+   */
+  positionElements() {
+    const value = this.getValue();
+    const prevAlignLeft = this.shouldAlignLeft;
+    const mode = Object(_ionic_global_63a97a32_js__WEBPACK_IMPORTED_MODULE_1__["b"])(this);
+    const shouldAlignLeft = (!this.animated || value.trim() !== '' || !!this.focused);
+    this.shouldAlignLeft = shouldAlignLeft;
+    if (mode !== 'ios') {
+      return;
+    }
+    if (prevAlignLeft !== shouldAlignLeft) {
+      this.positionPlaceholder();
+    }
+    if (this.animated) {
+      this.positionCancelButton();
+    }
+  }
+  /**
+   * Positions the input placeholder
+   */
+  positionPlaceholder() {
+    const inputEl = this.nativeInput;
+    if (!inputEl) {
+      return;
+    }
+    const isRTL = document.dir === 'rtl';
+    const iconEl = (this.el.shadowRoot || this.el).querySelector('.searchbar-search-icon');
+    if (this.shouldAlignLeft) {
+      inputEl.removeAttribute('style');
+      iconEl.removeAttribute('style');
+    }
+    else {
+      // Create a dummy span to get the placeholder width
+      const doc = document;
+      const tempSpan = doc.createElement('span');
+      tempSpan.innerText = this.placeholder || '';
+      doc.body.appendChild(tempSpan);
+      // Get the width of the span then remove it
+      Object(_helpers_1457892a_js__WEBPACK_IMPORTED_MODULE_2__["r"])(() => {
+        const textWidth = tempSpan.offsetWidth;
+        tempSpan.remove();
+        // Calculate the input padding
+        const inputLeft = 'calc(50% - ' + (textWidth / 2) + 'px)';
+        // Calculate the icon margin
+        const iconLeft = 'calc(50% - ' + ((textWidth / 2) + 30) + 'px)';
+        // Set the input padding start and icon margin start
+        if (isRTL) {
+          inputEl.style.paddingRight = inputLeft;
+          iconEl.style.marginRight = iconLeft;
         }
         else {
-            return this.rightOptions;
+          inputEl.style.paddingLeft = inputLeft;
+          iconEl.style.marginLeft = iconLeft;
         }
+      });
     }
-    async updateOptions() {
-        const options = this.el.querySelectorAll('ion-item-options');
-        let sides = 0;
-        // Reset left and right options in case they were removed
-        this.leftOptions = this.rightOptions = undefined;
-        for (let i = 0; i < options.length; i++) {
-            const option = await options.item(i).componentOnReady();
-            const side = Object(_helpers_5c745fbd_js__WEBPACK_IMPORTED_MODULE_2__["i"])(option.side) ? 'end' : 'start';
-            if (side === 'start') {
-                this.leftOptions = option;
-                sides |= 1 /* Start */;
-            }
-            else {
-                this.rightOptions = option;
-                sides |= 2 /* End */;
-            }
-        }
-        this.optsDirty = true;
-        this.sides = sides;
-    }
-    canStart(gesture) {
-        /**
-         * If very close to start of the screen
-         * do not open left side so swipe to go
-         * back will still work.
-         */
-        const rtl = document.dir === 'rtl';
-        const atEdge = (rtl) ? (window.innerWidth - gesture.startX) < 15 : gesture.startX < 15;
-        if (atEdge) {
-            return false;
-        }
-        const selected = openSlidingItem;
-        if (selected && selected !== this.el) {
-            this.closeOpened();
-            return false;
-        }
-        return !!(this.rightOptions || this.leftOptions);
-    }
-    onStart() {
-        openSlidingItem = this.el;
-        if (this.tmr !== undefined) {
-            clearTimeout(this.tmr);
-            this.tmr = undefined;
-        }
-        if (this.openAmount === 0) {
-            this.optsDirty = true;
-            this.state = 4 /* Enabled */;
-        }
-        this.initialOpenAmount = this.openAmount;
-        if (this.item) {
-            this.item.style.transition = 'none';
-        }
-    }
-    onMove(gesture) {
-        if (this.optsDirty) {
-            this.calculateOptsWidth();
-        }
-        let openAmount = this.initialOpenAmount - gesture.deltaX;
-        switch (this.sides) {
-            case 2 /* End */:
-                openAmount = Math.max(0, openAmount);
-                break;
-            case 1 /* Start */:
-                openAmount = Math.min(0, openAmount);
-                break;
-            case 3 /* Both */: break;
-            case 0 /* None */: return;
-            default:
-                console.warn('invalid ItemSideFlags value', this.sides);
-                break;
-        }
-        let optsWidth;
-        if (openAmount > this.optsWidthRightSide) {
-            optsWidth = this.optsWidthRightSide;
-            openAmount = optsWidth + (openAmount - optsWidth) * ELASTIC_FACTOR;
-        }
-        else if (openAmount < -this.optsWidthLeftSide) {
-            optsWidth = -this.optsWidthLeftSide;
-            openAmount = optsWidth + (openAmount - optsWidth) * ELASTIC_FACTOR;
-        }
-        this.setOpenAmount(openAmount, false);
-    }
-    onEnd(gesture) {
-        const velocity = gesture.velocityX;
-        let restingPoint = (this.openAmount > 0)
-            ? this.optsWidthRightSide
-            : -this.optsWidthLeftSide;
-        // Check if the drag didn't clear the buttons mid-point
-        // and we aren't moving fast enough to swipe open
-        const isResetDirection = (this.openAmount > 0) === !(velocity < 0);
-        const isMovingFast = Math.abs(velocity) > 0.3;
-        const isOnCloseZone = Math.abs(this.openAmount) < Math.abs(restingPoint / 2);
-        if (swipeShouldReset(isResetDirection, isMovingFast, isOnCloseZone)) {
-            restingPoint = 0;
-        }
-        const state = this.state;
-        this.setOpenAmount(restingPoint, true);
-        if ((state & 32 /* SwipeEnd */) !== 0 && this.rightOptions) {
-            this.rightOptions.fireSwipeEvent();
-        }
-        else if ((state & 64 /* SwipeStart */) !== 0 && this.leftOptions) {
-            this.leftOptions.fireSwipeEvent();
-        }
-    }
-    calculateOptsWidth() {
-        this.optsWidthRightSide = 0;
-        if (this.rightOptions) {
-            this.rightOptions.style.display = 'flex';
-            this.optsWidthRightSide = this.rightOptions.offsetWidth;
-            this.rightOptions.style.display = '';
-        }
-        this.optsWidthLeftSide = 0;
-        if (this.leftOptions) {
-            this.leftOptions.style.display = 'flex';
-            this.optsWidthLeftSide = this.leftOptions.offsetWidth;
-            this.leftOptions.style.display = '';
-        }
-        this.optsDirty = false;
-    }
-    setOpenAmount(openAmount, isFinal) {
-        if (this.tmr !== undefined) {
-            clearTimeout(this.tmr);
-            this.tmr = undefined;
-        }
-        if (!this.item) {
-            return;
-        }
-        const style = this.item.style;
-        this.openAmount = openAmount;
-        if (isFinal) {
-            style.transition = '';
-        }
-        if (openAmount > 0) {
-            this.state = (openAmount >= (this.optsWidthRightSide + SWIPE_MARGIN))
-                ? 8 /* End */ | 32 /* SwipeEnd */
-                : 8 /* End */;
-        }
-        else if (openAmount < 0) {
-            this.state = (openAmount <= (-this.optsWidthLeftSide - SWIPE_MARGIN))
-                ? 16 /* Start */ | 64 /* SwipeStart */
-                : 16 /* Start */;
+  }
+  /**
+   * Show the iOS Cancel button on focus, hide it offscreen otherwise
+   */
+  positionCancelButton() {
+    const isRTL = document.dir === 'rtl';
+    const cancelButton = (this.el.shadowRoot || this.el).querySelector('.searchbar-cancel-button');
+    const shouldShowCancel = this.shouldShowCancelButton();
+    if (cancelButton && shouldShowCancel !== this.isCancelVisible) {
+      const cancelStyle = cancelButton.style;
+      this.isCancelVisible = shouldShowCancel;
+      if (shouldShowCancel) {
+        if (isRTL) {
+          cancelStyle.marginLeft = '0';
         }
         else {
-            this.tmr = setTimeout(() => {
-                this.state = 2 /* Disabled */;
-                this.tmr = undefined;
-            }, 600);
-            openSlidingItem = undefined;
-            style.transform = '';
-            return;
+          cancelStyle.marginRight = '0';
         }
-        style.transform = `translate3d(${-openAmount}px,0,0)`;
-        this.ionDrag.emit({
-            amount: openAmount,
-            ratio: this.getSlidingRatioSync()
-        });
+      }
+      else {
+        const offset = cancelButton.offsetWidth;
+        if (offset > 0) {
+          if (isRTL) {
+            cancelStyle.marginLeft = -offset + 'px';
+          }
+          else {
+            cancelStyle.marginRight = -offset + 'px';
+          }
+        }
+      }
     }
-    getSlidingRatioSync() {
-        if (this.openAmount > 0) {
-            return this.openAmount / this.optsWidthRightSide;
-        }
-        else if (this.openAmount < 0) {
-            return this.openAmount / this.optsWidthLeftSide;
-        }
-        else {
-            return 0;
-        }
+  }
+  getValue() {
+    return this.value || '';
+  }
+  hasValue() {
+    return this.getValue() !== '';
+  }
+  /**
+   * Determines whether or not the cancel button should be visible onscreen.
+   * Cancel button should be shown if one of two conditions applies:
+   * 1. `showCancelButton` is set to `always`.
+   * 2. `showCancelButton` is set to `focus`, and the searchbar has been focused.
+   */
+  shouldShowCancelButton() {
+    if ((this.showCancelButton === 'never') || (this.showCancelButton === 'focus' && !this.focused)) {
+      return false;
     }
-    render() {
-        const mode = Object(_ionic_global_08f4fb8a_js__WEBPACK_IMPORTED_MODULE_1__["b"])(this);
-        return (Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["H"], { class: {
-                [mode]: true,
-                'item-sliding-active-slide': (this.state !== 2 /* Disabled */),
-                'item-sliding-active-options-end': (this.state & 8 /* End */) !== 0,
-                'item-sliding-active-options-start': (this.state & 16 /* Start */) !== 0,
-                'item-sliding-active-swipe-end': (this.state & 32 /* SwipeEnd */) !== 0,
-                'item-sliding-active-swipe-start': (this.state & 64 /* SwipeStart */) !== 0
-            } }));
+    return true;
+  }
+  /**
+   * Determines whether or not the clear button should be visible onscreen.
+   * Clear button should be shown if one of two conditions applies:
+   * 1. `showClearButton` is set to `always`.
+   * 2. `showClearButton` is set to `focus`, and the searchbar has been focused.
+   */
+  shouldShowClearButton() {
+    if ((this.showClearButton === 'never') || (this.showClearButton === 'focus' && !this.focused)) {
+      return false;
     }
-    get el() { return Object(_index_29df6f59_js__WEBPACK_IMPORTED_MODULE_0__["e"])(this); }
-    static get watchers() { return {
-        "disabled": ["disabledChanged"]
-    }; }
-}
-const swipeShouldReset = (isResetDirection, isMovingFast, isOnResetZone) => {
-    // The logic required to know when the sliding item should close (openAmount=0)
-    // depends on three booleans (isResetDirection, isMovingFast, isOnResetZone)
-    // and it ended up being too complicated to be written manually without errors
-    // so the truth table is attached below: (0=false, 1=true)
-    // isResetDirection | isMovingFast | isOnResetZone || shouldClose
-    //         0        |       0      |       0       ||    0
-    //         0        |       0      |       1       ||    1
-    //         0        |       1      |       0       ||    0
-    //         0        |       1      |       1       ||    0
-    //         1        |       0      |       0       ||    0
-    //         1        |       0      |       1       ||    1
-    //         1        |       1      |       0       ||    1
-    //         1        |       1      |       1       ||    1
-    // The resulting expression was generated by resolving the K-map (Karnaugh map):
-    return (!isMovingFast && isOnResetZone) || (isResetDirection && isMovingFast);
+    return true;
+  }
+  render() {
+    const { cancelButtonText } = this;
+    const animated = this.animated && _ionic_global_63a97a32_js__WEBPACK_IMPORTED_MODULE_1__["c"].getBoolean('animated', true);
+    const mode = Object(_ionic_global_63a97a32_js__WEBPACK_IMPORTED_MODULE_1__["b"])(this);
+    const clearIcon = this.clearIcon || (mode === 'ios' ? 'close-circle' : 'close-sharp');
+    const searchIcon = this.searchIcon || (mode === 'ios' ? 'search-outline' : 'search-sharp');
+    const shouldShowCancelButton = this.shouldShowCancelButton();
+    const cancelButton = (this.showCancelButton !== 'never') && (Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { "aria-label": cancelButtonText, "aria-hidden": shouldShowCancelButton ? undefined : 'true', type: "button", tabIndex: mode === 'ios' && !shouldShowCancelButton ? -1 : undefined, onMouseDown: this.onCancelSearchbar, onTouchStart: this.onCancelSearchbar, class: "searchbar-cancel-button" }, Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { "aria-hidden": "true" }, mode === 'md'
+      ? Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ion-icon", { "aria-hidden": "true", mode: mode, icon: this.cancelButtonIcon, lazy: false })
+      : cancelButtonText)));
+    return (Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["H"], { role: "search", "aria-disabled": this.disabled ? 'true' : null, class: Object(_theme_ff3fc52f_js__WEBPACK_IMPORTED_MODULE_3__["c"])(this.color, {
+        [mode]: true,
+        'searchbar-animated': animated,
+        'searchbar-disabled': this.disabled,
+        'searchbar-no-animate': animated && this.noAnimate,
+        'searchbar-has-value': this.hasValue(),
+        'searchbar-left-aligned': this.shouldAlignLeft,
+        'searchbar-has-focus': this.focused,
+        'searchbar-should-show-clear': this.shouldShowClearButton(),
+        'searchbar-should-show-cancel': this.shouldShowCancelButton()
+      }) }, Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", { class: "searchbar-input-container" }, Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("input", { "aria-label": "search text", disabled: this.disabled, ref: el => this.nativeInput = el, class: "searchbar-input", inputMode: this.inputmode, enterKeyHint: this.enterkeyhint, onInput: this.onInput, onBlur: this.onBlur, onFocus: this.onFocus, placeholder: this.placeholder, type: this.type, value: this.getValue(), autoComplete: this.autocomplete, autoCorrect: this.autocorrect, spellcheck: this.spellcheck }), mode === 'md' && cancelButton, Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ion-icon", { "aria-hidden": "true", mode: mode, icon: searchIcon, lazy: false, class: "searchbar-search-icon" }), Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("button", { "aria-label": "reset", type: "button", "no-blur": true, class: "searchbar-clear-button", onMouseDown: ev => this.onClearInput(ev, true), onTouchStart: ev => this.onClearInput(ev, true) }, Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ion-icon", { "aria-hidden": "true", mode: mode, icon: clearIcon, lazy: false, class: "searchbar-clear-icon" }))), mode === 'ios' && cancelButton));
+  }
+  get el() { return Object(_index_7a8b7a1c_js__WEBPACK_IMPORTED_MODULE_0__["i"])(this); }
+  static get watchers() { return {
+    "debounce": ["debounceChanged"],
+    "value": ["valueChanged"],
+    "showCancelButton": ["showCancelButtonChanged"]
+  }; }
 };
-ItemSliding.style = itemSlidingCss;
+Searchbar.style = {
+  ios: searchbarIosCss,
+  md: searchbarMdCss
+};
 
 
 

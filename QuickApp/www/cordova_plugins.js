@@ -58,7 +58,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-ionic-webview": "4.2.1",
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "2.4.2",
-    "cordova-plugin-whitelist": "1.3.3",
-    "enablex-cordova-plugin": "1.9.2"
+    "enablex-cordova-plugin": "2.1.0"
   };
 });

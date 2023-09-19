@@ -1,12 +1,4 @@
 {
-  "cordova-plugin-whitelist": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-whitelist@1.3.3"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-plugin-statusbar": {
     "source": {
       "type": "registry",
@@ -47,14 +39,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "enablex-cordova-plugin": {
-    "source": {
-      "type": "registry",
-      "id": "enablex-cordova-plugin@latest"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
   "cordova-plugin-enable-multidex": {
     "source": {
       "type": "registry",
@@ -75,6 +59,14 @@
     "source": {
       "type": "registry",
       "id": "cordova-plugin-androidx-adapter"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "enablex-cordova-plugin": {
+    "source": {
+      "type": "registry",
+      "id": "enablex-cordova-plugin"
     },
     "is_top_level": true,
     "variables": {}

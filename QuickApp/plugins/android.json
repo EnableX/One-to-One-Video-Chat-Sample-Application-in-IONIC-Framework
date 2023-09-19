@@ -29,9 +29,6 @@
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "io.ionic.starter"
-    },
     "enablex-cordova-plugin": {
       "PACKAGE_NAME": "io.ionic.starter"
     }

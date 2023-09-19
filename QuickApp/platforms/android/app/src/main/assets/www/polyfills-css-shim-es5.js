@@ -1,18 +1,25 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["polyfills-css-shim"], {
   /***/
-  "./node_modules/@ionic/core/dist/esm/css-shim-8a9bfe22.js":
+  "./node_modules/@ionic/core/dist/esm/css-shim-2ccf4dec.js":
   /*!****************************************************************!*\
-    !*** ./node_modules/@ionic/core/dist/esm/css-shim-8a9bfe22.js ***!
+    !*** ./node_modules/@ionic/core/dist/esm/css-shim-2ccf4dec.js ***!
     \****************************************************************/
 
   /*! no static exports found */
 
   /***/
-  function node_modulesIonicCoreDistEsmCssShim8a9bfe22Js(module, exports) {
+  function node_modulesIonicCoreDistEsmCssShim2ccf4decJs(module, exports) {
     /*
-     Stencil Client Platform v1.14.0 | MIT Licensed | https://stenciljs.com
+     Stencil Client Patch Esm v2.5.0 | MIT Licensed | https://stenciljs.com
      */
-    var StyleNode = function StyleNode() {
+    var _assign = function __assign() {
+      return (_assign = Object.assign || function (e) {
+        for (var t, r = 1, n = arguments.length; r < n; r++) for (var s in t = arguments[r]) Object.prototype.hasOwnProperty.call(t, s) && (e[s] = t[s]);
+
+        return e;
+      }).apply(this, arguments);
+    },
+        StyleNode = function StyleNode() {
       this.start = 0, this.end = 0, this.previous = null, this.parent = null, this.rules = null, this.parsedCssText = "", this.cssText = "", this.atRule = !1, this.type = 0, this.keyframesName = "", this.selector = "", this.parsedSelector = "";
     };
 
@@ -28,14 +35,12 @@
       var t = new StyleNode();
       t.start = 0, t.end = e.length;
 
-      for (var r = t, n = 0, s = e.length; n < s; n++) {
-        if (e[n] === OPEN_BRACE) {
-          r.rules || (r.rules = []);
-          var o = r,
-              a = o.rules[o.rules.length - 1] || null;
-          (r = new StyleNode()).start = n + 1, r.parent = o, r.previous = a, o.rules.push(r);
-        } else e[n] === CLOSE_BRACE && (r.end = n + 1, r = r.parent || t);
-      }
+      for (var r = t, n = 0, s = e.length; n < s; n++) if (e[n] === OPEN_BRACE) {
+        r.rules || (r.rules = []);
+        var o = r,
+            a = o.rules[o.rules.length - 1] || null;
+        (r = new StyleNode()).start = n + 1, r.parent = o, r.previous = a, o.rules.push(r);
+      } else e[n] === CLOSE_BRACE && (r.end = n + 1, r = r.parent || t);
 
       return t;
     }
@@ -51,17 +56,13 @@
       }
 
       var o = e.rules;
-      if (o) for (var a = 0, i = o.length, l = void 0; a < i && (l = o[a]); a++) {
-        parseCss(l, t);
-      }
+      if (o) for (var a = 0, i = o.length, l = void 0; a < i && (l = o[a]); a++) parseCss(l, t);
       return e;
     }
 
     function _expandUnicodeEscapes(e) {
       return e.replace(/\\([0-9a-f]{1,6})\s/gi, function () {
-        for (var e = arguments[1], t = 6 - e.length; t--;) {
-          e = "0" + e;
-        }
+        for (var e = arguments[1], t = 6 - e.length; t--;) e = "0" + e;
 
         return "\\" + e;
       });
@@ -183,9 +184,7 @@
       var t = 0;
       e = removeCustomAssigns(e = e.replace(COMMENTS, "")).replace(TRAILING_LINES, "");
 
-      for (var r = []; t < e.length;) {
-        t = compileVar(e, r, t);
-      }
+      for (var r = []; t < e.length;) t = compileVar(e, r, t);
 
       return r;
     }
@@ -329,11 +328,11 @@
         return "string" == typeof r ? replaceScope(r, e.scopeId, t) : r;
       }),
           n = e.selectors.map(function (r) {
-        return Object.assign(Object.assign({}, r), {
+        return _assign(_assign({}, r), {
           selector: replaceScope(r.selector, e.scopeId, t)
         });
       });
-      return Object.assign(Object.assign({}, e), {
+      return _assign(_assign({}, e), {
         template: r,
         selectors: n,
         scopeId: t
@@ -363,9 +362,7 @@
     }
 
     function loadDocumentLinks(e, t) {
-      for (var r = [], n = e.querySelectorAll('link[rel="stylesheet"][href]:not([data-no-shim])'), s = 0; s < n.length; s++) {
-        r.push(addGlobalLink(e, t, n[s]));
-      }
+      for (var r = [], n = e.querySelectorAll('link[rel="stylesheet"][href]:not([data-no-shim])'), s = 0; s < n.length; s++) r.push(addGlobalLink(e, t, n[s]));
 
       return Promise.all(r);
     }

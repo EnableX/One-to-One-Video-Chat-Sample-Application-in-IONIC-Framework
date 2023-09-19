@@ -25,7 +25,7 @@
 		D7818B0DF4AC459BA830F22A /* IONAssetHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 356761838B9B4EECB05BCDFA /* IONAssetHandler.m */; };
 		D817F36D4CFF45D7B3E9153A /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C015C7C205AE48FE89072CA2 /* CDVSplashScreen.m */; };
 		DCB1C1EE6D0147B5874ADA30 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8EA43AA37D413287AD80CC /* CDVStatusBar.m */; };
-		68042210876F4BEE91D7C97F /* EnxCordovaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A170D262D20471581091BF4 /* EnxCordovaPlugin.m */; };
+		432371122F6745B0A6B2F431 /* EnxCordovaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = E004AD3482204F1C9E1395DB /* EnxCordovaPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,8 +95,8 @@
 		F2A24F9354D04C7E9F98AAEE /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; };
 		F60F2A7E5B5749A9AD5AC01D /* CDVWKWebViewEngine.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVWKWebViewEngine.m; path = "cordova-plugin-ionic-webview/CDVWKWebViewEngine.m"; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = MyApp/config.xml; sourceTree = "<group>"; };
-		3A170D262D20471581091BF4 /* EnxCordovaPlugin.m */ = {isa = PBXFileReference; name = "EnxCordovaPlugin.m"; path = "enablex-cordova-plugin/EnxCordovaPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		9F7339E9F96B4425A3569A0A /* EnxCordovaPlugin.h */ = {isa = PBXFileReference; name = "EnxCordovaPlugin.h"; path = "enablex-cordova-plugin/EnxCordovaPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E004AD3482204F1C9E1395DB /* EnxCordovaPlugin.m */ = {isa = PBXFileReference; name = "EnxCordovaPlugin.m"; path = "enablex-cordova-plugin/EnxCordovaPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		2C3B043D4871463EA60DB2F6 /* EnxCordovaPlugin.h */ = {isa = PBXFileReference; name = "EnxCordovaPlugin.h"; path = "enablex-cordova-plugin/EnxCordovaPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,8 +224,8 @@
 				1803B235F7CA43718ED354A2 /* IONAssetHandler.h */,
 				E92F0CCC375E499287719808 /* CDVIonicKeyboard.m */,
 				142360FF5A5D4314A4B011F5 /* CDVIonicKeyboard.h */,
-				3A170D262D20471581091BF4 /* EnxCordovaPlugin.m */,
-				9F7339E9F96B4425A3569A0A /* EnxCordovaPlugin.h */,
+				E004AD3482204F1C9E1395DB /* EnxCordovaPlugin.m */,
+				2C3B043D4871463EA60DB2F6 /* EnxCordovaPlugin.h */,
 			);
 			name = Plugins;
 			path = MyApp/Plugins;
@@ -399,7 +399,7 @@
 				A9D2018B917347AFA3F42255 /* CDVWKProcessPoolFactory.m in Sources */,
 				D7818B0DF4AC459BA830F22A /* IONAssetHandler.m in Sources */,
 				061B9C88B4B0488991F882BE /* CDVIonicKeyboard.m in Sources */,
-				68042210876F4BEE91D7C97F /* EnxCordovaPlugin.m in Sources */,
+				432371122F6745B0A6B2F431 /* EnxCordovaPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

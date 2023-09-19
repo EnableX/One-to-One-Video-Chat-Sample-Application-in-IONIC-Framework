@@ -3,7 +3,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-@interface EnxCordovaPlugin : CDVPlugin <EnxRoomDelegate,EnxStreamDelegate,EnxPlayerDelegate>{
+@interface EnxCordovaPlugin : CDVPlugin <EnxRoomDelegate,EnxStreamDelegate,EnxPlayerDelegate,EnxTroubleShooterDelegate>{
 }
 // The hooks for our plugin commands
 -(void)getPrint:(CDVInvokedUrlCommand*)command;
@@ -153,6 +153,7 @@ Create Remore Player View
 #pragma - make outbond call
 /*initiate outbond call*/
 -(void)makeOutboundCall:(CDVInvokedUrlCommand*)command;
+-(void)cancelOutboundCall:(CDVInvokedUrlCommand*)command;
 
 #pragma -mark Chair Controller Methods
 /*This method for participent, Where he/she request for floor access*/
@@ -168,11 +169,68 @@ Create Remore Player View
 /*This method for Modaitore, Where he/she can releaseFloor any particepnt floor request*/
 -(void)releaseFloor:(CDVInvokedUrlCommand*)command;
 
+//inviteToFloor
+-(void)inviteToFloor:(CDVInvokedUrlCommand*)command;
+//cancelFloorInvite
+-(void)cancelFloorInvite:(CDVInvokedUrlCommand*)command;
+//rejectInviteFloor
+-(void)rejectInviteFloor:(CDVInvokedUrlCommand*)command;
+//acceptInviteFloorRequest
+-(void)acceptInviteFloorRequest:(CDVInvokedUrlCommand*)command;
+
+
 #pragma - make Pin/Unpin user
 /*This method for Modaitore, Where he/she can releaseFloor any particepnt floor request*/
 -(void)pinUsers:(CDVInvokedUrlCommand*)command;
 /*This method for Modaitore, Where he/she can releaseFloor any particepnt floor request*/
 -(void)unpinUsers:(CDVInvokedUrlCommand*)command;
+
+
+#pragma - make spotlight user
+/*This method for moderator can add spotlight */
+-(void)addSpotlightUsers:(CDVInvokedUrlCommand*)command;
+/*This method for moderator can remove spotlight */
+-(void)removeSpotlightUsers:(CDVInvokedUrlCommand*)command;
+
+#pragma - make Audio Energy /Talker Notification
+-(void)subscribeForTalkerNotification:(CDVInvokedUrlCommand*)command;
+
+
+/*#pragma - make Precall test
+-(void)clientDiagnostics:(CDVInvokedUrlCommand*)command; */
+
+#pragma - mark switchRoomMode
+-(void)switchRoomMode:(CDVInvokedUrlCommand*)command;
+
+#pragma - mark capture Screenshot
+
+-(void)captureScreenShot:(CDVInvokedUrlCommand*)command;
+
+#pragma - mark single user audio mute
+-(void)hardMuteUserAudio:(CDVInvokedUrlCommand*)command;
+
+#pragma - mark single user audio unmute
+-(void)hardUnmuteUserAudio:(CDVInvokedUrlCommand*)command;
+
+#pragma - mute single user video .
+-(void)hardMuteUserVideo:(CDVInvokedUrlCommand*)command;
+
+#pragma-  unmute single user video stream.
+-(void)hardUnmuteUserVideo:(CDVInvokedUrlCommand*)command;
+
+#pragma - highlight border for client
+-(void)highlightBorderForClient:(CDVInvokedUrlCommand*)command;
+#pragma- change background for client
+-(void)changeBgColorForClients:(CDVInvokedUrlCommand*)command;
+
+#pragma - StartLivetranscription
+-(void)subscribeForLiveTranscription:(CDVInvokedUrlCommand*)command;
+-(void)startLiveTranscriptionForRoom:(CDVInvokedUrlCommand*)command;
+#pragma- StopLivetranscription
+-(void)stopLiveTranscription:(CDVInvokedUrlCommand*)command;
+
+
+
 
 //Call Back Methods
 //Room Connected
@@ -224,6 +282,8 @@ Create Remore Player View
 -(void)onConnectionLost:(CDVInvokedUrlCommand*)command;
 -(void)onOutBoundCallInitiated:(CDVInvokedUrlCommand*)command;
 -(void)onDialStateEvents:(CDVInvokedUrlCommand*)command;
+-(void)onDTMFCollected:(CDVInvokedUrlCommand*)command;
+-(void)onOutBoundCallCancel:(CDVInvokedUrlCommand*)command;
 -(void)onPlayerStats:(CDVInvokedUrlCommand*)command;
 -(void)onReconnect:(CDVInvokedUrlCommand*)command;
 -(void)onUserReconnectSuccess:(CDVInvokedUrlCommand*)command;
@@ -259,6 +319,8 @@ Create Remore Player View
 -(void)onRemoteStreamVideoUnMute:(CDVInvokedUrlCommand*)command;
 -(void)OnCapturedView:(CDVInvokedUrlCommand*)command;
 -(void)onUserDataReceived:(CDVInvokedUrlCommand*)command;
+-(void)onRoomBandwidthAlert:(CDVInvokedUrlCommand*)command;
+
 #pragma -mark CC Callback
 -(void)onFloorRequested:(CDVInvokedUrlCommand*)command;
 -(void)onFloorRequestReceived:(CDVInvokedUrlCommand*)command;
@@ -271,8 +333,71 @@ Create Remore Player View
 -(void)onCancelledFloorRequest:(CDVInvokedUrlCommand*)command;
 -(void)onFinishedFloorRequest:(CDVInvokedUrlCommand*)command;
 
+-(void)onACKInviteToFloorRequested:(CDVInvokedUrlCommand*)command;
+-(void)onInviteToFloorRequested:(CDVInvokedUrlCommand*)command;
+-(void)onInvitedForFloorAccess:(CDVInvokedUrlCommand*)command;
+-(void)onCanceledFloorInvite:(CDVInvokedUrlCommand*)command;
+-(void)onRejectedInviteFloor:(CDVInvokedUrlCommand*)command;
+-(void)onAcceptedFloorInvite:(CDVInvokedUrlCommand*)command;
+
 #pragma -mark pin/unpin Callback
 -(void)onAckPinUsers:(CDVInvokedUrlCommand*)command;
 -(void)onAckUnpinUsers:(CDVInvokedUrlCommand*)command;
 -(void)onPinnedUsers:(CDVInvokedUrlCommand*)command;
+
+#pragma -mark spotlight Callback
+
+-(void)onAckAddSpotlightUsers:(CDVInvokedUrlCommand*)command;
+-(void)onAckRemoveSpotlightUsers:(CDVInvokedUrlCommand*)command;
+-(void)onUpdateSpotlightUsers:(CDVInvokedUrlCommand*)command;
+
+#pragma -mark Audio Energy Callback
+
+-(void)onAckSubscribeTalkerNotification:(CDVInvokedUrlCommand*)command;
+-(void)onAckUnsubscribeTalkerNotification:(CDVInvokedUrlCommand*)command;
+-(void)onTalkerNtification:(CDVInvokedUrlCommand*)command;
+
+#pragma -mark Precall Test Callback
+/*
+-(void)onClientDiagnosisFailed:(CDVInvokedUrlCommand*)command;
+-(void)onClientDiagnosisStopped:(CDVInvokedUrlCommand*)command;
+-(void)onClientDiagnosisFinished:(CDVInvokedUrlCommand*)command;
+-(void)onClientDiagnosisStatus:(CDVInvokedUrlCommand*)command;
+-(void)onClientBitrateStatus:(CDVInvokedUrlCommand*)command;
+-(void)onClientBitrateFinished:(CDVInvokedUrlCommand*)command;
+-(void)onClientBitrateFailed:(CDVInvokedUrlCommand*)command;*/
+
+#pragma -mark switched Room Callback
+-(void)onAckSwitchedRoom:(CDVInvokedUrlCommand*)command;
+-(void)onRoomModeSwitched:(CDVInvokedUrlCommand*)command;
+
+#pragma -mark single mute Audio
+- (void)onAckHardMuteUserAudio:(CDVInvokedUrlCommand*)command;
+#pragma -mark Single unmute Audio
+- (void)onAckHardunMuteUserAudio:(CDVInvokedUrlCommand*)command; 
+
+#pragma -mark single mute video
+- (void)onAckHardMuteUserVideo:(CDVInvokedUrlCommand*)command; 
+
+#pragma -mark single unmute video
+- (void)onAckHardUnMuteUserVideo:(CDVInvokedUrlCommand*)command; 
+
+#pragma -mark LiveTranscription Callback
+
+- (void)onACKStartLiveTranscription:(CDVInvokedUrlCommand*)command; 
+- (void)onACKStopLiveTranscription:(CDVInvokedUrlCommand*)command;
+- (void)onACKSubscribeForLiveTranscription:(CDVInvokedUrlCommand*)command;
+- (void)onTranscriptionEvents:(CDVInvokedUrlCommand*)command; 
+- (void)onRoomTranscriptionOn:(CDVInvokedUrlCommand*)command; 
+- (void)onRoomTranscriptionOff:(CDVInvokedUrlCommand*)command; 
+- (void)onSelfTranscriptionOn:(CDVInvokedUrlCommand*)command; 
+- (void)onSelfTranscriptionOff:(CDVInvokedUrlCommand*)command; 
+
+#pragma -mark HLS Streaming Callback
+- (void)onHlsStarted:(CDVInvokedUrlCommand*)command; 
+- (void)onHlsStopped:(CDVInvokedUrlCommand*)command; 
+- (void)onHlsFailed:(CDVInvokedUrlCommand*)command; 
+- (void)onHlsWaiting:(CDVInvokedUrlCommand*)command; 
+
+
 @end
