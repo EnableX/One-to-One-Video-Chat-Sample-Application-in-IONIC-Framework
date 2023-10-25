@@ -1,10 +1,14 @@
-# 1-to-1 RTC: A Sample ionic App with EnableX Cordova Toolkit
+# Build a 1-to-1 Real-Time Communication Ionic App with EnableX Cordova Toolkit: Comprehensive Guide
+
+Explore a Sample Ionic App Showcasing EnableX Platform Video APIs and Cordova Toolkit for Real-Time Communication (RTC)
 
 This is a Sample ionic App demonstrates the use of [EnableX platform Server APIs](https://www.enablex.io/developer/video-api/server-api) and Cordova Toolkit.  It allows developers to ramp up on app development by hosting on their own devices. 
 
-This App creates a virtual Room on the fly  hosted on the Enablex platform using REST calls and uses the Room credentials (i.e. Room Id) to connect to the virtual Room as a mobile client.  The same Room credentials can be shared with others to join the same virtual Room to carry out an RTC (Real-Time Communication) session. 
+Unlock the potential of this sample Ionic application, which serves as a practical demonstration of how to utilize EnableX platform Video APIs and the Cordova Toolkit. Developers can accelerate their app development skills by deploying this app on their own devices.
 
-> EnableX Developer Center: https://developer.enablex.io/
+This application seamlessly generates virtual rooms on-demand within the EnableX platform via REST calls and leverages the associated Room credentials (specifically, Room ID) to connect as a mobile client to the virtual Room. Furthermore, these Room credentials are readily shareable, facilitating collaborative RTC (Real-Time Communication) sessions within the same virtual Room.
+
+For comprehensive resources and documentation, visit the EnableX Developer Center at https://developer.enablex.io/.
 
 ## 1. How to get started
 
