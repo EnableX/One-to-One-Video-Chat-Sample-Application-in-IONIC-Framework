@@ -2,7 +2,7 @@
 
 Explore a Sample Ionic App Showcasing EnableX Platform Video APIs and Cordova Toolkit for Real-Time Communication (RTC)
 
-This is a Sample ionic App demonstrates the use of [EnableX platform Server APIs](https://www.enablex.io/developer/video-api/server-api) and Cordova Toolkit.  It allows developers to ramp up on app development by hosting on their own devices. 
+This is a Sample ionic App demonstrates the use of [EnableX platform Server APIs](https://developer.enablex.io/docs/references/apis/video-api/index/) and Cordova Toolkit.  It allows developers to ramp up on app development by hosting on their own devices. 
 
 Unlock the potential of this sample Ionic application, which serves as a practical demonstration of how to utilize EnableX platform Video APIs and the Cordova Toolkit. Developers can accelerate their app development skills by deploying this app on their own devices.
 
@@ -199,7 +199,7 @@ Note the following:
 * Application Server is created using EnableX Server API while Rest API Service helps in provisioning, session access and post-session reporting.  
 
 To know more about Server API, go to:
-https://www.enablex.io/developer/video-api/server-api
+https://developer.enablex.io/docs/references/apis/video-api/index/
 
 
 ## 3. Cordova Toolkit
@@ -211,4 +211,4 @@ This Sample Applcation uses EnableX Cordova Toolkit to communicate with EnableX 
 EnableX provides hosted Demo Application of different use-case for you to try out.
 
 1. Try a quick Video Call: https://try.enablex.io
-2. Try Meeting & Webinar:  https://www.enablex.io/ucaas/
+2. Try Meeting & Webinar:  https://developer.enablex.io/docs/references/apis/ucaas-api/index/
