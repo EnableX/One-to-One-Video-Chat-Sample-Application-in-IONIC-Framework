@@ -16,7 +16,7 @@ For comprehensive resources and documentation, visit the EnableX Developer Cente
 
 #### 1.1.1 App Id and App Key 
 
-* Create an account with EnableX [https://portal.enablex.io/cpaas/trial-sign-up/] 
+* Create an account with EnableX [https://www.enablex.io/free-trial/] 
 * Create your Application
 * Get your App ID and App Key delivered to your email
 
